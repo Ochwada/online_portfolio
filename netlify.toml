@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+  environment = { NODE_VERSION = "22" } # Adjust based on your app's requirements
+  command = "npm run build && next export"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
