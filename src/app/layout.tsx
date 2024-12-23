@@ -1,4 +1,3 @@
-// layout.tsx
 import type { Metadata } from "next";
 
 import "./globals.css";
@@ -11,18 +10,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  readonly children: React.ReactNode;
+}) {
   return (
-    <html lang="en" data-theme="dark">
+    <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
       </head>
       <body className="antialiased font-grotesk">
-        <ThemeProvider>
-          {children}
-        </ThemeProvider>
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );

@@ -16,9 +16,9 @@ import DevIcon from "../../images/socialMedia/Dev.svg; */
 
 const Footer: React.FC = () => {
     return (
-        <footer className=" footer flex-col gap-6 border-t border-gray-500/[0.25]">
+        <footer className=" footer flex-col gap-2 border-t border-gray-500/[0.25]">
             {/* Navigation Links */}
-            <nav className="flex space-x-4">
+            {/*  <nav className="flex space-x-4">
                 {navigation.map((item) => (
                     <Link
                         key={item.id}
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
                         {item.name}
                     </Link>
                 ))}
-            </nav>
+            </nav> */}
 
             {/* Social Media Links */}
             <div className="flex gap-4">
@@ -71,7 +71,7 @@ const Footer: React.FC = () => {
             </div>
 
             {/* Copyright Text */}
-            <p className=" text-sm">&copy; {new Date().getFullYear()} Ochwada. All rights reserved.</p>
+            <p className=" text-xs mt-1">&copy; {new Date().getFullYear()} Ochwada. All rights reserved.</p>
         </footer>
     );
 };

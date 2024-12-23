@@ -7,12 +7,11 @@ import ThemeToggleButton from './ThemeToggleButton';
 import { navigation } from '@/Components/Constant';
 import Image from 'next/image';
 import MobileNav from './MobileNav';
-import { useTheme } from './ThemeContext';
 
 const Header: React.FC = () => {
     const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
     const pathname = usePathname();
-    const { theme } = useTheme();
+
 
     const toggleMobileNav = () => {
         setIsMobileNavOpen(!isMobileNavOpen);
@@ -22,7 +21,7 @@ const Header: React.FC = () => {
         <header
             className=" fixed top-0 left-0 w-full z-50 border-b border-gray-500/[0.25] "
         >
-            <div className="flex items-center justify-between max-w-7xl mx-auto p-4">
+            <div className="flex items-center justify-between max-w-7xl mx-auto px-4 py-1">
                 {/* Logo */}
                 <div className="flex items-center">
                     <Link href="/">

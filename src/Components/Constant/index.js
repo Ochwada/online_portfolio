@@ -37,7 +37,7 @@ export const projectsNavigation = [
         //web_href: "https://ardhi.de/",
         href: "https://ardhi.slab.com/posts/what-is-ardhi-project-z0d01cz8?shr=EZiIPCLM0lt9h1C_2osUBQA_",
         image: '/assets/ardhi_app.png',
-        category: ["Web Development |", "Project Management"],
+        category: ["Web Development", "Project Management"],
         subcategory: "Frontend",
         tools: ["#React", "#TailwindCSS", "#NextJS"],
     },

@@ -190,7 +190,7 @@ footer {
   backdrop-filter: blur(3px);
   font-size: 14px;
   line-height: 14px;
-  height: 8.5rem;
+  height: 6rem;
 }
 
 footer::before {
@@ -227,14 +227,6 @@ header::before {
   opacity: 0.2;
 }
 
-/* header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4.5rem;
-
-} */
 /*------------------------------- Timeline & Experience ------------------------------*/
 
 .timeline {
@@ -300,6 +292,89 @@ header::before {
   transform-origin: 0%;
 }
 /*------------------------------- font class  ------------------------------- */
+/*  -------------- The font --------------------- */
+/*  -- Dancing Script -- */
+.dancing-script-regular {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.dancing-script-medium {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.dancing-script-semibold {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.dancing-script-bold {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+/*  -- Lora  -- */
+.lora-regular {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.lora-medium {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.lora-semibold {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.lora-bold {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
+}
+/*  -- Space Grotesk -- */
+.space-grotesk-light {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.space-grotesk-regular {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.space-grotesk-medium {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.space-grotesk-semibold {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.space-grotesk-bold {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+/*  -- IBM Plex -- */
 .ibm-plex-mono-thin {
   font-family: "IBM Plex Mono", monospace;
   font-weight: 100;
@@ -383,7 +458,7 @@ header::before {
   font-weight: 700;
   font-style: italic;
 }
-
+/*  -------------- End --------------------- */
 
 @layer base {
   * {
