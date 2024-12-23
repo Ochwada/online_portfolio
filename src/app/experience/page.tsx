@@ -48,18 +48,18 @@ const Timeline: React.FC = () => {
                 <h3 className="text-base font-bold text-slate-500">{item.position}</h3>
                 <p className="text-xs text-gray-400">{item.company}</p>
             </span>
-       
-                <p className="text-sm text-gray-500">{item.date}</p>
-                <ul className="mt-2 list-disc list-inside">
-                    {Array.isArray(item.description)
-                        ? item.description.map((desc, idx) => (
-                            <li key={`desc-${index}-${idx}`} className="text-gray-600 text-sm">
-                                {desc}
-                            </li>
-                        ))
-                        : <p className="text-gray-700 text-sm">{item.description}</p>}
-                </ul>
-            
+
+            <p className="text-sm text-gray-500">{item.date}</p>
+            <ul className="mt-2 list-disc list-inside">
+                {Array.isArray(item.description)
+                    ? item.description.map((desc, idx) => (
+                        <li key={`desc-${index}-${idx}`} className="text-gray-600 text-sm">
+                            {desc}
+                        </li>
+                    ))
+                    : <p className="text-gray-700 text-sm">{item.description}</p>}
+            </ul>
+
             {item.companylink && (
                 <a
                     href={item.companylink}
@@ -134,16 +134,11 @@ const Timeline: React.FC = () => {
             </div>
 
             <div className="flex-grow pt-16 pb-16 ">
-                <motion.div
-                    className="progress-bar fixed top-16 left-0 w-full h-1 bg-blue-500"
-                    style={{ scaleX: scrollYProgress }}
-                />
-
                 <div className="p-4 sm:p-8">
                     <h1 className="text-2xl sm:text-4xl font-bold mb-8 sm:mb-12 text-center">
                         My Journey: Experience, Education & Training
                     </h1>
-
+                    {/* --------- Experience -------------*/}
                     <div className="mb-16">
                         <h2 className="text-slate-500  text-xl sm:text-3xl font-bold mb-4 sm:mb-8 text-center">
                             <span className="underline underline-offset-4 text-mypink">Expe</span>rience
@@ -153,7 +148,7 @@ const Timeline: React.FC = () => {
                         </ul>
                     </div>
 
-
+                    {/* --------- Education -------------*/}
                     <div className="mb-16">
                         <h2 className="text-slate-500 text-xl sm:text-3xl font-bold mb-4 sm:mb-8 text-center">
                             <span className="underline underline-offset-4 text-mypink">Edu</span>cation
@@ -162,8 +157,7 @@ const Timeline: React.FC = () => {
                             {educationData.map((item, index) => renderEducationItem(item, index))}
                         </ul>
                     </div>
-
-
+                    {/* --------- Training -------------*/}
                     <div className="mb-24">
                         <h2 className=" text-slate-500 text-xl sm:text-3xl font-bold mb-4 sm:mb-8 text-center">
                             <span className="underline underline-offset-4 text-mypink">Tra</span>ining

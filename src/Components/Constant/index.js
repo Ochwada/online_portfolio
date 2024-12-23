@@ -161,6 +161,12 @@ export const experienceData = [
         companylink: "https://ardhi.de/"
     },
     {
+        position: "International Sales Manager ",
+        date: "Oct 2023 - Dec 2024",
+        company: "Hansa Luftbild AG (Münster - DE)",
+        description: ["Driving international sales and business growth."],
+    },
+    {
         position: "Technical Managing Director",
         date: "Aug 2023 - Present",
         company: "Dakmotion UG (Münich - DE)",
@@ -173,12 +179,6 @@ export const experienceData = [
         company: "Napta Playa e.V ( - DE)",
         description: ["Supporting in the GIS and Remote Sensing project analysis."],
         companylink: "https://www.nabtaplaya.de/"
-    },
-    {
-        position: "International Sales Manager ",
-        date: "Oct 2023 - Dec 2024",
-        company: "Hansa Luftbild AG (Münster - DE)",
-        description: ["Driving international sales and business growth."],
     },
     {
         position: "Product Evangelist | Sales ",

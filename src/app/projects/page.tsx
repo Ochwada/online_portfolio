@@ -72,7 +72,7 @@ const ProjectCard: React.FC<{ project: typeof projectsNavigation[0]; onToolClick
                     href={project.git_href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-mypink hover:underline font-bold text-sm"
+                    className="text-purple-500 hover:underline font-bold text-sm"
                 >
                     Code
                 </a>
@@ -86,7 +86,7 @@ const ProjectCard: React.FC<{ project: typeof projectsNavigation[0]; onToolClick
                     href={project.web_href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-mypink hover:underline font-bold text-xs"
+                    className="text-purple-500 hover:underline font-bold text-xs"
                 >
                     Live Site
                 </a>
@@ -100,7 +100,7 @@ const ProjectCard: React.FC<{ project: typeof projectsNavigation[0]; onToolClick
                     href={project.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-mypink hover:underline font-bold text-xs"
+                    className="text-purple-500 hover:underline font-bold text-xs"
                 >
                     More Info
                 </a>
