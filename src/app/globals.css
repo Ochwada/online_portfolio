@@ -181,16 +181,14 @@ footer {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 20px;
+  padding: 4px;
   background-image: radial-gradient(
     rgba(0, 0, 0, 0) 1px,
     var(--background) 1px
   );
   background-size: 4px 4px;
   backdrop-filter: blur(3px);
-  font-size: 14px;
-  line-height: 14px;
-  height: 6rem;
+  height: 4rem;
 }
 
 footer::before {

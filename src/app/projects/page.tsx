@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion, useScroll } from "framer-motion";
 import Image from 'next/image';
 
 import Header from "@/Components/Shared/Header";
@@ -29,8 +28,9 @@ const toolColors: Record<string, { bg: string; text: string }> = {
 
 
 const ProjectCard: React.FC<{ project: typeof projectsNavigation[0]; onToolClick: (tool: string) => void }> = ({ project, onToolClick }) => (
-    <div className="mt-4 border border-dashed border-gray-500/[0.5] rounded p-2 shadow-lg hover:shadow-purple-500/50 transition-shadow duration-400">
-        <Image
+    <div className="flex flex-col mt-4 border border-dashed border-gray-500/[0.5] rounded p-2 shadow-lg hover:shadow-purple-500/50 transition-shadow duration-400">
+       <div className="flex-grow">
+       <Image
             src={project.image}
             alt={project.name}
             layout="responsive"
@@ -64,7 +64,8 @@ const ProjectCard: React.FC<{ project: typeof projectsNavigation[0]; onToolClick
                 );
             })}
         </div>
-        <div className="flex justify-between mx-2">
+        </div>
+        <div className="flex justify-between mx-2 border-t border-gray-300/[0.5] pt-2">
             {/* GitHub Link */}
             {project.git_href ? (
                 <a
@@ -76,7 +77,7 @@ const ProjectCard: React.FC<{ project: typeof projectsNavigation[0]; onToolClick
                     Code
                 </a>
             ) : (
-                <span className="text-gray-400 font-bold">Code (N/A)</span>
+                <span className="text-gray-400 font-bold text-xs">Code (N/A)</span>
             )}
 
             {/* Live Site Link */}
@@ -85,12 +86,12 @@ const ProjectCard: React.FC<{ project: typeof projectsNavigation[0]; onToolClick
                     href={project.web_href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-mypink hover:underline font-bold text-sm"
+                    className="text-mypink hover:underline font-bold text-xs"
                 >
                     Live Site
                 </a>
             ) : (
-                <span className="text-gray-400 font-bold text-sm">Live Site (N/A)</span>
+                <span className="text-gray-400 font-bold text-xs">Live Site (N/A)</span>
             )}
 
             {/* More Info Link */}
@@ -99,12 +100,12 @@ const ProjectCard: React.FC<{ project: typeof projectsNavigation[0]; onToolClick
                     href={project.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-mypink hover:underline font-bold text-sm"
+                    className="text-mypink hover:underline font-bold text-xs"
                 >
                     More Info
                 </a>
             ) : (
-                <span className="text-gray-400 font-bold text-sm">More Info (N/A)</span>
+                <span className="text-gray-400 font-bold text-xs">More Info (N/A)</span>
             )}
         </div>
     </div>
@@ -112,7 +113,6 @@ const ProjectCard: React.FC<{ project: typeof projectsNavigation[0]; onToolClick
 
 
 const Projects: React.FC = () => {
-    const { scrollYProgress } = useScroll();
     const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
     const [selectedSubcategories, setSelectedSubcategories] = useState<string[]>([]);
     const [selectedTool, setSelectedTool] = useState<string | null>(null);
@@ -164,10 +164,6 @@ const Projects: React.FC = () => {
             </div>
             <div className="flex-grow pt-16 pb-16">
                 <div>
-                    <motion.div
-                        className="progress-bar fixed top-16 left-0 w-full h-1 bg-blue-500"
-                        style={{ scaleX: scrollYProgress }}
-                    />
                     <div className="p-4 mb-14">
                         <h1 className="text-2xl mb-4">
                             <span className="ibm-plex-mono-bold md:text-4xl text-2xl">

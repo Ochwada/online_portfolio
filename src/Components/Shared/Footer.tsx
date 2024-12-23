@@ -2,21 +2,18 @@
 "use client";
 
 import React from 'react';
-import Link from 'next/link';
-import { navigation, SocialMedia } from '@/Components/Constant';
+import { SocialMedia } from '@/Components/Constant';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Image from 'next/image';
-/* import MediumIcon from "../../images/socialMedia/Medium.svg";
-import DevIcon from "../../images/socialMedia/Dev.svg; */
 
 
 
 const Footer: React.FC = () => {
     return (
-        <footer className=" footer flex-col gap-2 border-t border-gray-500/[0.25]">
+        <footer className="footer flex-col gap-2 border-t border-gray-500/[0.25] ">
             {/* Navigation Links */}
             {/*  <nav className="flex space-x-4">
                 {navigation.map((item) => (
@@ -31,7 +28,7 @@ const Footer: React.FC = () => {
             </nav> */}
 
             {/* Social Media Links */}
-            <div className="flex gap-4">
+            <div className="flex gap-4 mt-1">
                 {SocialMedia.map((media) => (
                     <a
                         key={media.id}
