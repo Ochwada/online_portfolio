@@ -116,7 +116,7 @@ const Projects: React.FC = () => {
     const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
     const [selectedSubcategories, setSelectedSubcategories] = useState<string[]>([]);
     const [selectedTool, setSelectedTool] = useState<string | null>(null);
-    const [visibleProjectsCount, setVisibleProjectsCount] = useState(6);
+    const [visibleProjectsCount, setVisibleProjectsCount] = useState(8);
 
     // Deduplicate categories using flatMap and Set
     const categories = Array.from(
@@ -154,7 +154,7 @@ const Projects: React.FC = () => {
     };
 
     const handleLoadMore = () => {
-        setVisibleProjectsCount((prevCount) => prevCount + 6);
+        setVisibleProjectsCount((prevCount) => prevCount + 8);
     };
 
     return (
