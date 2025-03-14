@@ -4,12 +4,23 @@
 @tailwind components;
 @tailwind utilities;
 
- [data-theme="dark"] {
+/*  [data-theme="dark"] {
   --background: #00000f;
   --foreground: #ededed;
   color:#ededed;
   background:#00000f;
-} 
+}  */
+
+.dark {
+  --background: #020817;
+  --foreground: #ededed;
+  --card: #121212;
+  --text: #ffffff;
+  color: var(--foreground);
+  background: var(--background);
+}
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -66,10 +77,12 @@
   }
 }
 
-body {
-  background-color: var(--background);
-  transition: background-color 0.2s ease, color 0.2s ease;
-  font-family: "Space Grotesk", sans-serif;
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
 }
 
 .medium-icon {
@@ -99,6 +112,7 @@ body {
   right: 0;
   bottom: 0;
   background-image: url('/background.svg');
+  /* background-image: url('/exp_bg.svg'); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -125,6 +139,26 @@ body {
   opacity: 0.09; /* Set the SVG background opacity to 50% */
   z-index: -1; /* Ensure it stays behind the main content */
 }
+/*------------------------------- MILESTONE Background ------------------------------- */
+.milestone-background {
+  position: relative;
+}
+
+.milestone-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/dddepth.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.09; /* Set the SVG background opacity to 50% */
+  z-index: -1; /* Ensure it stays behind the main content */
+}
+/*------------------------------- ---------------------------------------------------- */
 .comp-img {
   position: relative;
   width: 100%;

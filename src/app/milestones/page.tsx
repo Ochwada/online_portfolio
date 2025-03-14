@@ -2,7 +2,8 @@
 
 import React from "react";
 import { motion, useScroll } from "framer-motion";
-import { ScrollText } from "lucide-react";
+
+//import { ScrollText } from "lucide-react";
 
 
 import Header from "@/Components/Shared/Header";

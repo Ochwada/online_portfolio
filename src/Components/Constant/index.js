@@ -17,8 +17,23 @@ export const navigation = [
     },
     {
         id: 4,
-        name: "Experience",
-        href: "/experience",
+        name: "Milestones",
+        href: "/milestones",
+        subLinks: [
+            { 
+                id: 5, 
+                name: "Education", 
+                href: "/milestones/education" 
+            },
+            { 
+                id: 6, 
+                name: "Experience", 
+                href: "/milestones/experience" },
+            { 
+                id: 7, 
+                name: "Trainings", 
+                href: "/milestones/trainings" },
+        ],
     },
     {
         id: 3,
@@ -31,20 +46,31 @@ export const navigation = [
 
 export const projectsNavigation = [
     {
+        id: "portfolio25",
+        name: "Portfolio - March 2025",
+        git_href: "https://github.com/Ochwada/online_portfolio",
+        web_href: "https://linda-ochwada.netlify.app/",
+        //href: "https://ardhi.slab.com/posts/what-is-ardhi-project-z0d01cz8?shr=EZiIPCLM0lt9h1C_2osUBQA_",
+        image: '/assets/present-port.png',
+        category: ["Web Development"],
+        subcategory: "Frontend",
+        tools: ["#React", "#TailwindCSS", "#NextJS", '#Netlify'],
+    },
+    {
         id: "ardhiapp",
         name: "Ardhi Project - WebGIS Application",
         git_href: "https://github.com/Ardhi-OWM/ardhi_supabase_clerk_latest",
-        //web_href: "https://ardhi.de/",
+        web_href: "https://ardhi-app.netlify.app/",
         href: "https://ardhi.slab.com/posts/what-is-ardhi-project-z0d01cz8?shr=EZiIPCLM0lt9h1C_2osUBQA_",
         image: '/assets/ardhi_app.png',
         category: ["Web Development", "Project Management"],
         subcategory: "Frontend",
-        tools: ["#React", "#TailwindCSS", "#NextJS"],
+        tools: ["#React", "#TailwindCSS", "#NextJS", '#Netlify'],
     },
     {
         id: "ardhi",
         name: "Ardhi Project - Landing Page",
-        git_href: "https://github.com/Ardhi-OWM/landing-page",
+        git_href: "https://github.com/Ardhi-OWM/landing-page-v2-2025",
         web_href: "https://ardhi.de/",
         href: "https://ardhi.slab.com/posts/what-is-ardhi-project-z0d01cz8?shr=EZiIPCLM0lt9h1C_2osUBQA_",
         image: '/assets/ardhi.png',
@@ -54,14 +80,14 @@ export const projectsNavigation = [
     },
     {
         id: 'ProjectsProfile2023',
-        name: "Curriculum vitae - Portfolio (May 2023)",
-        git_href: "https://github.com/Ochwada/My-Profile-CV-2023/tree/main/Ochwada_Profile_May2023",
+        name: "Portfolio - May 2023",
+        git_href: "https://github.com/Ochwada/portfolios/tree/main/v2_2023/Ochwada_Profile_May2023",
         web_href: "https://ochwada-23.netlify.app/",
         //href: "https://medium.com/@ochwada/c-programing-setup-in-visual-studio-code-bd4cb60e58ff",
         image: '/assets/profile0523.png',
         category: ["Web Development"],
         subcategory: "Frontend",
-        tools: ["#React", "#Vite", "#ThreeJS", "#TailwindCSS", '#Netlify',],
+        tools: ["#TailwindCSS", '#Netlify', "#React", "#Vite", "#ThreeJS", ],
     },
     {
         id: 'clvprediction',
@@ -83,6 +109,17 @@ export const projectsNavigation = [
         image: '/assets/catoon.png',
         category: ["Computer Vision"],
         subcategory: "Image Processing and Transformation",
+        tools: ["#Python",],
+    },
+    {
+        id: 'laphawp',
+        name: "Location Analysis of Potential High Altitude Wind Power",
+        git_href: "https://github.com/Ochwada/Thesis_-Data_Analysis-Public",
+        //web_href: "https://linda-ochwada.netlify.app/",
+        href: "https://medium.com/@ochwada/location-analysis-of-potential-high-altitude-wind-power-afcb37c275aa",
+        image: '/assets/laphawp.png',
+        category: ["Geospatial Analysis"],
+        subcategory: "Renewable Energy",
         tools: ["#Python",],
     },
 ];
@@ -156,7 +193,7 @@ export const experienceData = [
     {
         position: "GIS Frontend Developer | Project Manager",
         date: "Sept 2024 - Present",
-        company: "Ardhi Project - Ongoing (Berlin - DE)",
+        company: "Ardhi Project (Berlin - DE)",
         description: ["Leading the development of the Ardhi WebGIS application and ensuring optimized geospatial workflows."],
         companylink: "https://ardhi.de/"
     },
@@ -165,6 +202,7 @@ export const experienceData = [
         date: "Oct 2023 - Dec 2024",
         company: "Hansa Luftbild AG (Münster - DE)",
         description: ["Driving international sales and business growth."],
+        companylink: "https://www.hansaluftbild.de/"  
     },
     {
         position: "Technical Managing Director",
@@ -213,22 +251,26 @@ export const experienceData = [
         date: "April 15 —September 15",
         company: "GFZ - German Research Centre For Geosciences (Potsdam - DE)",
         description: ["Geo-Enabled City GHG Data in 3D"],
+        companylink: "https://www.gfz.de/en/"
     },
     {
         position: "GIS Intern ",
         date: "May 2012—October 2012",
         company: "Save the Elephants —STE (Nairobi -Kenya)",
         description: ["Producing migratory routes using STE data."],
+        companylink: "https://savetheelephants.org/"
     },
     {
         position: "GIS & Remote Sensing Intern  ",
         date: "May 2011—July 2011",
         company: "United Nations FAO- SWALIM (Nairobi -Kenya)",
+        companylink: "https://www.faoswalim.org/"
     },
     {
         position: "GIS & Remote Sensing Intern  ",
         date: "May 2010—July 2010",
         company: "United Nations FAO- SWALIM (Nairobi -Kenya)",
+        companylink: "https://www.faoswalim.org/"
     },
 ];
 
@@ -267,7 +309,7 @@ export const competence = [
 
 ];
 
-// ----------------- Footer Social Media
+// ----------------- Footer Social Media -----------------------------
 
 export const SocialMedia = [
     {
