@@ -262,7 +262,7 @@ const Projects: React.FC = () => {
                             )}
                             {visibleProjectsCount > 6 && (
                                 <button
-                                    onClick={() => setVisibleProjectsCount(6)}
+                                    onClick={() => setVisibleProjectsCount(8)}
                                     className="px-6 py-2 text-sm font-medium bg-gray-500 text-white rounded hover:bg-gray-700"
                                 >
                                     Show Less
