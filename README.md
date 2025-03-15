@@ -1,37 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Online Portfolio
 
-## Getting Started
+This project is a personal online portfolio showcasing skills, projects, and professional achievements.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Introduction](#introduction)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Acknowledgments](#acknowledgments)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Introduction
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The **Online Portfolio** is a web-based project designed to highlight my skills, experience, and work. It serves as a professional showcase and provides an overview of my technical and creative abilities.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Features
 
-## Learn More
+- **Responsive Design:** Works across various devices and screen sizes.
+- **Projects Section:** Showcases key projects with descriptions and links.
+- **Skills Display:** Highlights technical skills and competencies.
+- **About Me Page:** Provides background information and personal insights.
+- **Contact Form:** Enables visitors to get in touch easily.
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Frontend:**
+  - HTML5
+  - CSS3
+  - JavaScript
+  - [React.js](https://reactjs.org/)
+- **Styling:**
+  - [Tailwind CSS](https://tailwindcss.com/)
+- **Deployment:**
+  - [Netlify](https://www.netlify.com/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Installation
 
-## Deploy on Vercel
+To run this project locally:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Ochwada/online_portfolio.git
+   ```
+2. **Navigate to the project directory:**
+   ```bash
+   cd online_portfolio
+   ```
+3. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+4. **Start the development server:**
+   ```bash
+   npm start
+   ```
+   The portfolio should now be accessible at `http://localhost:3000`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# online_portfolio
+## Usage
+
+- **Navigation:** Browse through different sections to explore skills, projects, and background information.
+- **Interactivity:** Some elements are interactive, including the contact form.
+- **Customization:** The portfolio is adaptable and can be modified to include more content or design enhancements.
+
+## Acknowledgments
+
+- Inspired by various portfolio designs and web development best practices.
+- Special thanks to the open-source community for providing resources and tools that made this project possible.
