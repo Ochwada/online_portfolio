@@ -56,7 +56,7 @@ const Education = () => {
             {/* Timeline Content */}
             <div className="flex-grow pt-24 pb-16 px-4 sm:px-8">
                 <h1 className="text-2xl sm:text-4xl font-bold mb-12 text-center">
-                    Education
+                    <span className="text-mypink"> Academic</span> Education
                 </h1>
 
                 {/* Timeline Wrapper */}
@@ -67,7 +67,7 @@ const Education = () => {
                     {educationData.map((item, index) => (
                         <div 
                             key={index} 
-                            className={`relative flex items-center w-full max-w-5xl my-1/2 ${
+                            className={`relative flex items-center w-full max-w-8xl my-1/2 ${
                                 index % 2 === 0 ? "justify-start pr-10" : "justify-end pl-10"
                             }`}
                         >
@@ -83,15 +83,15 @@ const Education = () => {
                                 <p className="text-sm font-bold uppercase text-gray-600">{item.institution}</p>
                                 <p className="text-xs text-gray-500">{item.date}</p>
                                 <p className="text-sm">{item.description}</p>
-                                <p className="text-xs">  <span className="uppercase">Project Title </span>: &nbsp;
+                                <p className="text-xs pt-2">  <span className="uppercase"> Project Title </span>: &nbsp;
                                     {item.project ? (
-                                        <p
+                                        <span
                                             className="text-xs text-gray-500"
                                         >
                                            {item.project}
-                                        </p>
+                                        </span>
                                     ) : (
-                                        <span className="text-xs italic text-gray-400"> - </span>
+                                        <span className="text-xs italic text-gray-400"> N/A </span>
                                     )}
                                 </p>
 

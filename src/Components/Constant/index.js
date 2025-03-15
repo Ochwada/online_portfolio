@@ -83,7 +83,7 @@ export const projectsNavigation = [
         name: "Portfolio - May 2023",
         git_href: "https://github.com/Ochwada/portfolios/tree/main/v2_2023/Ochwada_Profile_May2023",
         web_href: "https://ochwada-23.netlify.app/",
-        //href: "https://medium.com/@ochwada/c-programing-setup-in-visual-studio-code-bd4cb60e58ff",
+        href: "https://github.com/Ochwada/portfolios/blob/main/v2_2023/Ochwada_Profile_May2023/README.md",
         image: '/assets/profile0523.png',
         category: ["Web Development"],
         subcategory: "Frontend",
@@ -94,7 +94,7 @@ export const projectsNavigation = [
         name: "Customer Lifetime Value Prediction",
         git_href: "https://github.com/Ochwada/Software_Code_Pytho",
         //web_href: "https://linda-ochwada.netlify.app/",
-        //href: "https://medium.com/@ochwada/c-programing-setup-in-visual-studio-code-bd4cb60e58ff",
+        href: "https://github.com/Ochwada/Software_Code_Pytho/blob/master/README.md",
         image: '/assets/clv.png',
         category: ["Machine Learning"],
         subcategory: "Predictive Analytics",
@@ -105,7 +105,7 @@ export const projectsNavigation = [
         name: "Turn Photos into Cartoons",
         git_href: "https://github.com/Ochwada/Data-Science-2023/blob/main/Photos%20into%20Cartoons/photo_to_catoons.ipynb",
         //web_href: "https://linda-ochwada.netlify.app/",
-        href: "https://medium.com/@ochwada/c-programing-setup-in-visual-studio-code-bd4cb60e58ff",
+        href: "https://github.com/Ochwada/Data-Science-2023/blob/main/Photos%20into%20Cartoons/README.md",
         image: '/assets/catoon.png',
         category: ["Computer Vision"],
         subcategory: "Image Processing and Transformation",
@@ -128,11 +128,18 @@ export const projectsNavigation = [
 // ------ Education Section  
 export const educationData = [
     {
+        title: "Java Backend Engineering - Future Women with Zalando",
+        date: "March 2024 - Present",
+        description: "Certificate",
+        institution: "StartSteps Digital Education GmbH",
+        //project: ["Location Analysis of High Altitude Wind Energy in Germany"],
+    },
+    {
         title: "Masters in Geodesy and Geoinformation Science",
-        date: "2013 - 2018",
+        date: "Oct 2013 - July 2018",
         description: "Masters Degree",
         institution: "Technical University of Berlin",
-        project: ["Master Thesis: Location Analysis of High Altitude Wind Energy in Germany"],
+        project: ["Location Analysis of High Altitude Wind Energy in Germany"],
     },
     {
         title: "Climate-KIC: Climate Change innovation & Entrepreneurship ",
@@ -145,7 +152,7 @@ export const educationData = [
         date: "2009 - 2012",
         description: "Bachelors Degree",
         institution: "Moi University, Eldoret (KE)",
-        project: ["Thesis: The Effect of Riparian Vegetation on River Delta in the Nzoia River delta, Kenya"],
+        project: ["The Effect of Riparian Vegetation on River Delta in the Nzoia River delta, Kenya"],
     },
 ];
 // ------ Training Section  
@@ -338,11 +345,11 @@ export const SocialMedia = [
     },
     {
         id: 6,
-        name: "Dev.to",
+        name: "Dev",
         href: "https://dev.to/ochwada",
         target: "_blank",
         rel: "noopener noreferrer",
-        ariaLabel: "Dev.to",
+        ariaLabel: "Dev",
     },
     {
         id: 1,

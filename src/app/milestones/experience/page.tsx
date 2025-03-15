@@ -55,7 +55,7 @@ const Experience = () => {
             {/* Timeline Content */}
             <div className="flex-grow pt-24 pb-16 px-4 sm:px-8">
                 <h1 className="text-2xl sm:text-4xl font-bold mb-12 text-center">
-                    Work Experience
+                <span className=" text-mypink"> Work</span> Experience
                 </h1>
 
                 {/* Timeline Wrapper */}
@@ -66,7 +66,7 @@ const Experience = () => {
                     {experienceData.map((item, index) => (
                         <div
                             key={index}
-                            className={`relative flex items-center w-full max-w-5xl my-1/2 ${index % 2 === 0 ? "justify-start pr-10" : "justify-end pl-10"
+                            className={`relative flex items-center w-full max-w-8xl my-1/2 ${index % 2 === 0 ? "justify-start pr-10" : "justify-end pl-10"
                                 }`}
                         >
                             {/* Timeline Dot - Always Centered */}
