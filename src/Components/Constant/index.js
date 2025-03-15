@@ -50,7 +50,7 @@ export const projectsNavigation = [
         name: "Portfolio - March 2025",
         git_href: "https://github.com/Ochwada/online_portfolio",
         web_href: "https://linda-ochwada.netlify.app/",
-        //href: "https://ardhi.slab.com/posts/what-is-ardhi-project-z0d01cz8?shr=EZiIPCLM0lt9h1C_2osUBQA_",
+        href: "https://github.com/Ochwada/online_portfolio/blob/main/README.md",
         image: '/assets/present-port.png',
         category: ["Web Development"],
         subcategory: "Frontend",

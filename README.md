@@ -28,7 +28,9 @@ The **Online Portfolio** is a web-based project designed to highlight my skills,
 - **Frontend:**
   - HTML5
   - CSS3
+  - Tailwind
   - JavaScript
+  - TypeScript
   - [React.js](https://reactjs.org/)
 - **Styling:**
   - [Tailwind CSS](https://tailwindcss.com/)
