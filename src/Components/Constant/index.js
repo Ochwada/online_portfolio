@@ -217,6 +217,12 @@ export const trainingData = [
         description: "Creative Online School - Udemy",
         certificateLink: "https://www.udemy.com/certificate/UC-feb55085-e62d-4f72-9294-c2414c5cfd66"
     },
+    {
+        training: "The Art of Evangelism",
+        date: "June 2022",
+        description: " Guy Kawasaki - Udemyy",
+        certificateLink: "https://www.udemy.com/certificate/UC-7acc0c40-096f-45e5-a68c-402eece19cee"
+    },
 
 ];
 // ------ Experience Section  
