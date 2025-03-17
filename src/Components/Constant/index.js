@@ -176,10 +176,22 @@ export const trainingData = [
         certificateLink: "https://www.coursera.org/account/accomplishments/records/W6GNY6XCSWUG"
     },
     {
-        training: "Python for Data Science",
+        training: "Python for Data Science, AI & Development",
         date: "June 2024",
         description: "IBMx - Coursera",
         certificateLink: "https://www.coursera.org/account/accomplishments/records/ETPRCNMG6BYU"
+    },
+    {
+        training: "Data Science Methodology",
+        date: "June 2024",
+        description: "IBMx - Coursera",
+        certificateLink: "https://coursera.org/share/b80d03b4750b88e0af223c2d9d293e43"
+    },
+    {
+        training: "Tools for Data Science",
+        date: "May 2024",
+        description: "IBMx - Coursera",
+        certificateLink: "https://coursera.org/share/15fa6e1acd32df87a17fd5c18dec9c05"
     },
     {
         training: "Fundamentals of of Technology Sales",
@@ -188,10 +200,22 @@ export const trainingData = [
         certificateLink: "https://www.coursera.org/account/accomplishments/records/JX9ZBVJAD3VL"
     },
     {
+        training: "What is Data Science?",
+        date: "April 2024",
+        description: "IBM - Coursera",
+        certificateLink: "https://coursera.org/share/c2eaa3d07fecd4b7defca99d706e3273"
+    },
+    {
         training: "Foundations of Project Management",
         date: "August 2023",
         description: "Google- Coursera",
         certificateLink: "https://www.coursera.org/account/accomplishments/records/HFW84NV488JL"
+    },
+    {
+        training: " Complete Responsive Web Development: 4 courses in 1",
+        date: "August 2022",
+        description: "Creative Online School - Udemy",
+        certificateLink: "https://www.udemy.com/certificate/UC-feb55085-e62d-4f72-9294-c2414c5cfd66"
     },
 
 ];
