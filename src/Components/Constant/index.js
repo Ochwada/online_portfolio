@@ -46,6 +46,17 @@ export const navigation = [
 
 export const projectsNavigation = [
     {
+        id: "javaProjects",
+        name: "Selected Java Projects",
+        git_href: "https://github.com/Ochwada/JavaProjects",
+        //web_href: " ",
+        href: "https://github.com/Ochwada/JavaProjects/blob/main/README.md",
+        image: '/assets/projects/java.png',
+        category: ["Software development"],
+        subcategory: "Software Engineering",
+        tools: ['#Java'],
+    },
+    {
         id: "portfolio25",
         name: "Portfolio - March 2025",
         git_href: "https://github.com/Ochwada/online_portfolio",

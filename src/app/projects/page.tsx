@@ -22,6 +22,9 @@ const toolColors: Record<string, { bg: string; text: string }> = {
 
     "#Python": { bg: "bg-cyan-100", text: "text-cyan-800" },
     "#C": { bg: "bg-emerald-100", text: "text-emerald-800" },
+
+    "#Java": { bg: "bg-lime-100", text: "text-lime-800" },
+    
     
 };
 
