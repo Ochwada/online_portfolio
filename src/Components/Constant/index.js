@@ -52,8 +52,8 @@ export const projectsNavigation = [
         //web_href: " ",
         href: "https://github.com/Ochwada/JavaProjects/blob/main/README.md",
         image: '/assets/projects/java.png',
-        category: ["Software development"],
-        subcategory: "Software Engineering",
+        category: ["Backend Development"],
+        subcategory: "Core Java",
         tools: ['#Java'],
     },
     {
@@ -75,7 +75,7 @@ export const projectsNavigation = [
         href: "https://ardhi.slab.com/posts/what-is-ardhi-project-z0d01cz8?shr=EZiIPCLM0lt9h1C_2osUBQA_",
         image: '/assets/ardhi_app.png',
         category: ["Web Development", "Project Management"],
-        subcategory: "Frontend",
+        subcategory: "Geospatial Frontend",
         tools: ["#React", "#TailwindCSS", "#NextJS", '#Netlify'],
     },
     {
@@ -107,8 +107,8 @@ export const projectsNavigation = [
         //web_href: "https://linda-ochwada.netlify.app/",
         href: "https://github.com/Ochwada/Software_Code_Pytho/blob/master/README.md",
         image: '/assets/clv.png',
-        category: ["Machine Learning"],
-        subcategory: "Predictive Analytics",
+        category: ["Data Science"],
+        subcategory: "Predictive Modeling",
         tools: ["#Python",],
     },
     {
@@ -119,7 +119,7 @@ export const projectsNavigation = [
         href: "https://github.com/Ochwada/Data-Science-2023/blob/main/Photos%20into%20Cartoons/README.md",
         image: '/assets/catoon.png',
         category: ["Computer Vision"],
-        subcategory: "Image Processing and Transformation",
+        subcategory: "Image Style Transfer",
         tools: ["#Python",],
     },
     {
@@ -129,7 +129,7 @@ export const projectsNavigation = [
         //web_href: "https://linda-ochwada.netlify.app/",
         href: "https://medium.com/@ochwada/location-analysis-of-potential-high-altitude-wind-power-afcb37c275aa",
         image: '/assets/laphawp.png',
-        category: ["Geospatial Analysis"],
+        category: ["Geospatial Analysis", "Research"],
         subcategory: "Renewable Energy",
         tools: ["#Python",],
     },
