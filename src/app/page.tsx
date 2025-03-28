@@ -75,10 +75,10 @@ const Home: React.FC = () => {
                 </span>
               </h1>
               <p className="text-sm sm:text-base md:text-lg leading-relaxed">
-                Passionate about Geoinformatics, Technology, and Project Management, I blend technical expertise with strategic insight. Known
-                for problem-solving and teamwork, I bring experience in <span className="text-purple-500 dancing-script-regular"> GIS & Remote Sensing Analytics, Project Management, Web Development
-                  </span> and <span className="text-purple-500 dancing-script-regular"> Sales</span>. My expertise includes GIS and Remote Sensing, Data Analytics, Project Management, Web Development, and Sales to
-                drive impactful, innovative solutions in every project. Eager to learn and share knowledge with my teams.
+                Passionate about Geoinformatics and Technology, I blend technical expertise with strategic insight. Known for problem-solving and teamwork, 
+                I bring experience in <span className="text-purple-500 dancing-script-regular"> GIS & Remote Sensing Analytics, Project Management, 
+                  Software Development </span> and <span className="text-purple-500 dancing-script-regular"> Sales</span>. I drive impactful and innovative 
+                  solutions in every project. Eager to learn and share knowledge with my teams.
               </p>
             </div>
           </div>
