@@ -1,11 +1,13 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { animate, motion, useMotionValue, useTransform } from "motion/react"
 import Image from 'next/image';
 
 import Header from "@/Components/Shared/Header";
 import Footer from "@/Components/Shared/Footer";
 import { projectsNavigation } from "@/Components/Constant";
+//import { m } from "framer-motion";
 
 // Color mapping for tools
 const toolColors: Record<string, { bg: string; text: string }> = {
@@ -24,49 +26,51 @@ const toolColors: Record<string, { bg: string; text: string }> = {
     "#C": { bg: "bg-emerald-100", text: "text-emerald-800" },
 
     "#Java": { bg: "bg-lime-100", text: "text-lime-800" },
-    
-    
+    "#Spring": { bg: "bg-rose-100", text: "text-rose-800" },
+    "#intellijIDEA": { bg: "bg-violet-100", text: "text-violet-800" },
+
+
 };
 
 
 
 const ProjectCard: React.FC<{ project: typeof projectsNavigation[0]; onToolClick: (tool: string) => void }> = ({ project, onToolClick }) => (
     <div className="flex flex-col mt-4 border border-dashed border-gray-500/[0.5] rounded p-2 shadow-lg hover:shadow-purple-500/50 transition-shadow duration-400">
-       <div className="flex-grow">
-       <Image
-            src={project.image}
-            alt={project.name}
-            layout="responsive"
-            width={300} // Adjust the value as per your layout needs
-            height={100} // Adjust the value as per your layout needs
-            className="w-full h-20 object-cover rounded-md mb-4 opacity-80"
-        />
-        <h2 className="text-base font-bold mb-2 ibm-plex-mono-semibold opacity-80">{project.name}</h2>
-        <div className="flex flex-wrap gap-2 mb-2 ">
-            {project.category.map((cat, index) => (
-                <span
-                    key={index}
-                    className="ibm-plex-mono-semibold-italic py-1 text-xs"
-                >
-                    {cat}
-                </span>
-            ))}
-        </div>
-        <p className="text-xs mb-4 dancing-script-semibold  text-gray-500 dark:text-gray-400">{project.subcategory}</p>
-        <div className="flex flex-wrap gap-3 mb-2">
-            {project.tools.map((tool, index) => {
-                const color = toolColors[tool] || { bg: "bg-gray-100", text: "text-gray-800" };
-                return (
-                    <button
+        <div className="flex-grow">
+            <Image
+                src={project.image}
+                alt={project.name}
+                layout="responsive"
+                width={300} // Adjust the value as per your layout needs
+                height={100} // Adjust the value as per your layout needs
+                className="w-full h-20 object-cover rounded-md mb-4 opacity-80"
+            />
+            <h2 className="text-base font-bold mb-2 ibm-plex-mono-semibold opacity-80">{project.name}</h2>
+            <div className="flex flex-wrap gap-2 mb-2 ">
+                {project.category.map((cat, index) => (
+                    <span
                         key={index}
-                        onClick={() => onToolClick(tool)}
-                        className={`px-2 py-1 text-xs rounded ${color.bg} ${color.text} cursor-pointer`}
+                        className="ibm-plex-mono-semibold-italic py-1 text-xs"
                     >
-                        {tool}
-                    </button>
-                );
-            })}
-        </div>
+                        {cat}
+                    </span>
+                ))}
+            </div>
+            <p className="text-xs mb-4 dancing-script-semibold  text-gray-500 dark:text-gray-400">{project.subcategory}</p>
+            <div className="flex flex-wrap gap-3 mb-2">
+                {project.tools.map((tool, index) => {
+                    const color = toolColors[tool] || { bg: "bg-gray-100", text: "text-gray-800" };
+                    return (
+                        <button
+                            key={index}
+                            onClick={() => onToolClick(tool)}
+                            className={`px-2 py-1 text-xs rounded ${color.bg} ${color.text} cursor-pointer`}
+                        >
+                            {tool}
+                        </button>
+                    );
+                })}
+            </div>
         </div>
         <div className="flex justify-between mx-2 border-t border-gray-300/[0.5] pt-2">
             {/* GitHub Link */}
@@ -113,13 +117,32 @@ const ProjectCard: React.FC<{ project: typeof projectsNavigation[0]; onToolClick
         </div>
     </div>
 );
+// ------------------ Frammer Motion ------------------
 
+const text = {
+    fontSize: 64,
+    color: "#7E60BF",
+}
+// ------------------ Frammer Motion END------------------
+// ------------------  ------------------- ---------------
 
 const Projects: React.FC = () => {
     const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
     const [selectedSubcategories, setSelectedSubcategories] = useState<string[]>([]);
     const [selectedTool, setSelectedTool] = useState<string | null>(null);
     const [visibleProjectsCount, setVisibleProjectsCount] = useState(8);
+
+    // ------------------ Frammer Motion ------------------
+
+    const count = useMotionValue(0)
+    const rounded = useTransform(() => Math.round(count.get()))
+
+    useEffect(() => {
+        const controls = animate(count, 10, { duration: 5 })
+        return () => controls.stop()
+    }, [])
+    // ------------------ Frammer Motion END------------------
+    // ------------------  ------------------- ---------------
 
     // Deduplicate categories using flatMap and Set
     const categories = Array.from(
@@ -174,10 +197,12 @@ const Projects: React.FC = () => {
                             </span>
                         </h1>
                         <p className="opacity-80 m-8  text-lg ibm">
-                        Welcome to - A Journey Through My Projects - You will find a selection of my work right here, each representing 
-                        the passion and commitment I put into it.
+                            Welcome to - A Journey Through My Projects - You will find a selection of my work right here, each representing
+                            the passion and commitment I put into it.
                         </p>
-
+                        <div className="flex justify-center mb-6 ">
+                            <motion.pre style={text}>{rounded}</motion.pre>
+                        </div>
                         {/* Category Tabs */}
                         <div className="flex flex-wrap gap-2 sm:gap-4 mb-4 justify-start sm:justify-center overflow-x-auto">
                             <button
@@ -196,8 +221,8 @@ const Projects: React.FC = () => {
                                     key={index}
                                     onClick={() => toggleSelection(category, setSelectedCategories)}
                                     className={`px-4 py-2 text-sm font-medium rounded ${selectedCategories.includes(category)
-                                            ? "bg-purple-300 text-white"
-                                            : "bg-gray-200 text-gray-800"
+                                        ? "bg-purple-300 text-white"
+                                        : "bg-gray-200 text-gray-800"
                                         }`}
                                 >
                                     {category}
@@ -211,8 +236,8 @@ const Projects: React.FC = () => {
                                 <button
                                     onClick={() => setSelectedSubcategories([])}
                                     className={`px-4 py-2 text-sm font-medium rounded ${!selectedSubcategories.length
-                                            ? "bg-pink-500 text-white"
-                                            : "bg-gray-200 text-gray-800"
+                                        ? "bg-pink-500 text-white"
+                                        : "bg-gray-200 text-gray-800"
                                         }`}
                                 >
                                     All Subcategories
@@ -222,8 +247,8 @@ const Projects: React.FC = () => {
                                         key={index}
                                         onClick={() => toggleSelection(subcategory, setSelectedSubcategories)}
                                         className={`px-4 py-2 text-sm font-medium rounded ${selectedSubcategories.includes(subcategory)
-                                                ? "bg-mypink text-white"
-                                                : "bg-gray-200 text-gray-800"
+                                            ? "bg-mypink text-white"
+                                            : "bg-gray-200 text-gray-800"
                                             }`}
                                     >
                                         {subcategory}

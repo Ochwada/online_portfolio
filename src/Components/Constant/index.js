@@ -42,19 +42,36 @@ export const navigation = [
     },
 
 ];
+// -------------------------------------------Skills Section --------------------
+export const Skills = [
+    { name: "SQL", level: 0.6, distance: "orbit-1" },
+
+    { name: "React", level: 0.6, distance: "orbit-2" },
+    { name: "Python", level: 0.6, distance: "orbit-2" },
+
+    { name: "Tailwind", level: 0.9, distance: "orbit-3" },
+    { name: "Java", level: 0.3, distance: "orbit-3" },
+
+    { name: "NodeJS", level: 0.2, distance: "orbit-4" },
+    { name: "NextJS", level: 0.5, distance: "orbit-4" },
+
+    { name: "GIS", level: 0.9, distance: "orbit-5" },
+  ];
+  
+  
 // -------------------------------------------Projects Navigation --------------------
 
 export const projectsNavigation = [
     {
         id: "javaProjects",
-        name: "Selected Java Projects",
+        name: "Java Mini Projects (Learning Journey)",
         git_href: "https://github.com/Ochwada/JavaProjects",
         //web_href: " ",
         href: "https://github.com/Ochwada/JavaProjects/blob/main/README.md",
         image: '/assets/projects/java.png',
         category: ["Backend Development"],
         subcategory: "Core Java",
-        tools: ['#Java'],
+        tools: ["#Java", "#intellijIDEA"],
     },
     {
         id: "portfolio25",

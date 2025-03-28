@@ -323,6 +323,75 @@ header::before {
   );
   transform-origin: 0%;
 }
+
+/*------------------------------- Solar System  ------------------------------- */
+/*  -------------- Solar System --------------------- */
+@keyframes orbit {
+ /*  0% {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  } */
+
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.orbit-label {
+  animation: counterOrbit 20s linear infinite;
+}
+
+.animate-orbit {
+  animation: orbit linear infinite;
+  transform-origin: center center;
+  
+}
+
+.orbit-1 {
+  width: 150px;
+  height: 150px;
+}
+
+.orbit-2 {
+  width: 200px;
+  height: 200px;
+}
+
+.orbit-3 {
+  width: 250px;
+  height: 250px;
+}
+
+.orbit-4 {
+  width: 300px;
+  height: 300px;
+}
+.orbit-5 {
+  width: 350px;
+  height: 350px;
+}
+
+.orbit-1 .planet-0 {
+  animation-duration: 16s;
+}
+.orbit-2 .planet-1 {
+  animation-duration: 17s;
+}
+.orbit-3 .planet-2 {
+  animation-duration: 18s;
+}
+.orbit-4 .planet-3 {
+  animation-duration: 19s;
+}
+.orbit-5 .planet-4 {
+  animation-duration: 20s;
+}
+
 /*------------------------------- font class  ------------------------------- */
 /*  -------------- The font --------------------- */
 /*  -- Dancing Script -- */

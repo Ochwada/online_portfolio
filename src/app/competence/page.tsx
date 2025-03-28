@@ -5,6 +5,7 @@ import React from "react";
 import Header from "@/Components/Shared/Header";
 import Footer from "@/Components/Shared/Footer";
 import { competence } from "@/Components/Constant";
+import Skills from "@/Components/Competence/Skills";
 
 const Competence: React.FC = () => {
 
@@ -17,24 +18,27 @@ const Competence: React.FC = () => {
             </div>
 
             {/* Page Content */}
-            <div className="flex-grow pt-16 pb-16 place-content-center">
+            {/* <div className="flex-grow pt-16 pb-16 place-content-center"> */}
+            <div className="flex-grow  place-content-center">
 
                 {/* Main Content */}
-                <div className="p-4 sm:p-8 pb-32 mx-8 ">
-                    <h1 className=" md:text-4xl text-2xl font-bold text-start mb-8">
+                <div className="p-4 sm:p-8 pb-2 mx-8 ">
+                    <h1 className=" md:text-4xl text-2xl font-bold text-start mb-2">
                         What are  areas of  my<span className="text-mypink"> expertise </span>?
                     </h1>
                     <div>
-                        <p className="text-base mb-6 md:mx-16 text-justify">
+                        <p className="text-base mb-1 md:mx-16 text-justify">
                             My expertise spans diverse fields. Each area represents a cornerstone of my professional journey,
-                            reflecting my commitment to mastering tools, technologies, and
-                            strategies that drive innovation and create meaningful solutions
-                            tailored to complex challenges.
+                            reflecting my commitment to mastering tools, technologies, and strategies that drive innovation and 
+                            create meaningful solutions  tailored to complex challenges. I am dedicated to continuous learning 
+                            and growth, ensuring that I stay at the forefront of industry trends and best practices. &nbsp;
+                            <a href="/projects" target="_blank" className="text-purple-500 text-xs font-bold underline underline-offset-1"> LEARN MORE </a>
                         </p>
+                        
                     </div>
 
                     {/* Competence Cards */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6  md:h-72 ">
+                    {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6  md:h-72 ">
                         {competence.map((item) => (
                             <div
                                 key={item.id}
@@ -51,6 +55,9 @@ const Competence: React.FC = () => {
                                 </a>
                             </div>
                         ))}
+                    </div> */}
+                    <div>
+                        <Skills />
                     </div>
                 </div>
 
