@@ -4,7 +4,6 @@ import React from "react";
 
 import Header from "@/Components/Shared/Header";
 import Footer from "@/Components/Shared/Footer";
-import { competence } from "@/Components/Constant";
 import Skills from "@/Components/Competence/Skills";
 
 const Competence: React.FC = () => {
