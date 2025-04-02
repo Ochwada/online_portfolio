@@ -159,6 +159,46 @@
   z-index: -1; /* Ensure it stays behind the main content */
 }
 /*------------------------------- ---------------------------------------------------- */
+/*------------------------------- MILESTONE Background ------------------------------- */
+.blog-background {
+  position: relative;
+}
+
+.blog-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/cccircular.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.09; /* Set the SVG background opacity to 50% */
+  z-index: -1; /* Ensure it stays behind the main content */
+}
+/*------------------------------- ---------------------------------------------------- */
+/*------------------------------- MILESTONE Background ------------------------------- */
+.contact-background {
+  position: relative;
+}
+
+.contact-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/oooscillate.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.19; /* Set the SVG background opacity to 50% */
+  z-index: -1; /* Ensure it stays behind the main content */
+}
+/*------------------------------- ---------------------------------------------------- */
 .comp-img {
   position: relative;
   width: 100%;

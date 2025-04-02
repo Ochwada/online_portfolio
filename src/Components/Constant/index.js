@@ -1,66 +1,12 @@
 
 // src/Components/Constant/index.js
 import React from 'react';
+// -------------------------------------------Blogs --------------------
 
-// -------------------------------------------Header Navigation --------------------
-export const navigation = [
-    {
-        id: 1,
-        name: "Home",
-        href: "/",
-        current: true,
-    },
-    {
-        id: 2,
-        name: "Competence",
-        href: "/competence",
-    },
-    {
-        id: 4,
-        name: "Milestones",
-        href: "/milestones",
-        subLinks: [
-            { 
-                id: 5, 
-                name: "Education", 
-                href: "/milestones/education" 
-            },
-            { 
-                id: 6, 
-                name: "Experience", 
-                href: "/milestones/experience" },
-            { 
-                id: 7, 
-                name: "Trainings", 
-                href: "/milestones/trainings" },
-        ],
-    },
-    {
-        id: 3,
-        name: "Projects",
-        href: "/projects",
-    },
-
-];
-// -------------------------------------------Skills Section --------------------
-export const Skills = [
-    { name: "SQL", level: 0.6, distance: "orbit-1" },
-
-    { name: "React", level: 0.6, distance: "orbit-2" },
-    { name: "Python", level: 0.6, distance: "orbit-2" },
-
-    { name: "Tailwind", level: 0.9, distance: "orbit-3" },
-    { name: "Java", level: 0.3, distance: "orbit-3" },
-
-    { name: "NodeJS", level: 0.2, distance: "orbit-4" },
-    { name: "NextJS", level: 0.5, distance: "orbit-4" },
-
-    { name: "GIS", level: 0.9, distance: "orbit-5" },
-  ];
-  
-  
-// -------------------------------------------Projects Navigation --------------------
-
+// ------------------------------------------- Blogs --------------------
+export { blogPosts } from "./blogPosts";
+// ------------------------------------------- Projects Navigation --------------------
+//export { projectsNavigation } from "./projectsNavigation";
 export const projectsNavigation = [
     {
         id: "javaProjects",
@@ -151,6 +97,86 @@ export const projectsNavigation = [
         tools: ["#Python",],
     },
 ];
+// -------------------------------------------Skills Section --------------------
+export const Skills = [
+    { name: "SQL", level: 0.6, distance: "orbit-1" },
+
+    { name: "React", level: 0.6, distance: "orbit-2" },
+    { name: "Python", level: 0.6, distance: "orbit-2" },
+
+    { name: "Tailwind", level: 0.9, distance: "orbit-3" },
+    { name: "Java", level: 0.3, distance: "orbit-3" },
+
+    { name: "NodeJS", level: 0.2, distance: "orbit-4" },
+    { name: "NextJS", level: 0.5, distance: "orbit-4" },
+
+    { name: "GIS", level: 0.9, distance: "orbit-5" },
+  ];
+
+  // -------------------------------------------Projects Navigation --------------------
+
+
+  
+// -------------------------------------------Header Navigation --------------------
+export const navigation = [
+    {
+        id: 1,
+        name: "Home",
+        href: "/",
+        current: true,
+    },
+    {
+        id: 2,
+        name: "Competence",
+        href: "/competence",
+    },
+    {
+        id: 4,
+        name: "Milestones",
+        href: "/milestones",
+        subLinks: [
+            { 
+                id: 5, 
+                name: "Education", 
+                href: "/milestones/education" 
+            },
+            { 
+                id: 6, 
+                name: "Experience", 
+                href: "/milestones/experience" },
+            { 
+                id: 7, 
+                name: "Trainings", 
+                href: "/milestones/trainings" },
+        ],
+    },
+    {
+        id: 3,
+        name: "Projects",
+        href: "/projects",
+    },
+    {
+        id: 8,
+        name: "Hub",
+        href: "/hub",
+        subLinks: [
+            {
+                id: 9,
+                name: "Blog",
+                href: "/hub/blogs",
+            },
+            {
+                id: 10,
+                name: "Contact Me",
+                href: "/hub/contact",
+            },
+        ],
+    },
+
+];
+
+  
+
 
 // --------------- Experience Page ---------------------------
 // ------ Education Section  
@@ -337,41 +363,6 @@ export const experienceData = [
         company: "United Nations FAO- SWALIM (Nairobi -Kenya)",
         companylink: "https://www.faoswalim.org/"
     },
-];
-
-// -------------------------- Competence page  --------------------------
-export const competence = [
-    {
-        id: 2,
-        name: "GIS & Remote Sensing - Analytics",
-        description: "Proficient in geospatial analysis, mapping, and remote sensing techniques for impactful insights.",
-        href: "/projects",
-    },
-   /*  {
-        id: 3,
-        name: "Data Analytics",
-        description: "Skilled in extracting meaningful insights from complex datasets to support decision-making.",
-        href: "/projects",
-    }, */
-    {
-        id: 4,
-        name: "Web Development",
-        description: "Creating dynamic, user-focused web applications using modern tools and frameworks.",
-        href: "/projects",
-    },
-    {
-        id: 1,
-        name: "Project Management",
-        description: "Expert in planning, execution, and delivering successful projects on time and within scope.",
-        href: "/projects",
-    },
-    /* {
-        id: 5,
-        name: "Sales & Strategy",
-        description: "Experienced in tailoring solutions, building relationships, and driving business growth.",
-        href: "/projects",
-    }, */
-
 ];
 
 // ----------------- Footer Social Media -----------------------------

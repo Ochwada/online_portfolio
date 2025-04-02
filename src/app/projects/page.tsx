@@ -193,8 +193,9 @@ const Projects: React.FC = () => {
                     <div className="p-4 mb-14">
                         <h1 className="text-2xl mb-4">
                             <span className="ibm-plex-mono-bold md:text-4xl text-2xl">
-                                Code Chronicles: Projects
+                            Code Chronicles: <span className="text-mypink"> Projects </span>  
                             </span>
+                            
                         </h1>
                         <p className="opacity-80 m-8  text-lg ibm">
                             Welcome to - A Journey Through My Projects - You will find a selection of my work right here, each representing
