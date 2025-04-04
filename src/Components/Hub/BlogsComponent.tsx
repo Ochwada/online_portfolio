@@ -26,6 +26,15 @@ const BlogsComponent: React.FC = () => {
         });
     };
 
+    const [copiedPostId, setCopiedPostId] = useState<number | null>(null);
+
+    const handleCopy = (link: string, id: number) => {
+        navigator.clipboard.writeText(link);
+        setCopiedPostId(id);
+        setTimeout(() => setCopiedPostId(null), 1500); // Hide "Copied" after 1.5s
+    };
+
+
     const handleSeeMore = () => {
         setVisibleCount((prev) => prev + 6);
     };
@@ -131,11 +140,20 @@ const BlogsComponent: React.FC = () => {
                                                     <FaWhatsapp className="hover:text-[#25D366]" />
                                                 </a>
                                                 <button
-                                                    onClick={() => navigator.clipboard.writeText(post.link)}
+                                                    onClick={() => handleCopy(post.link, post.id)}
                                                     title="Copy link"
+                                                    className="relative"
                                                 >
                                                     <FaLink className="hover:text-mypurple" />
+                                                    <span
+                                                        className={`absolute -top-6 left-1/2 transform -translate-x-1/2 text-xs bg-mypurple text-white px-2 py-0.5 rounded transition-opacity ${copiedPostId === post.id ? "opacity-100" : "opacity-0"
+                                                            }`}
+                                                    >
+                                                        Copied
+                                                    </span>
                                                 </button>
+
+
                                             </div>
                                         </div>
                                     </div>
