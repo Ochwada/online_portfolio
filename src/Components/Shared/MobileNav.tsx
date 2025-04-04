@@ -67,54 +67,50 @@ const MobileNav: React.FC<MobileNavProps> = ({ isOpen, toggleNav }) => {
                         })}
                     </nav> */}
                     <nav className="mt-12">
-    {navigation.map((item) => {
-        const isActive = pathname === item.href;
+                        {navigation.map((item) => {
+                            const isActive = pathname === item.href;
 
-        return (
-            <div key={item.id}>
-                {/* If the item has subLinks, render just the label (not a link) */}
-                {item.subLinks ? (
-                    <div className="ibm-plex-mono-semibold text-base uppercase font-semibold mb-2">
-                        {item.name}
-                    </div>
-                ) : (
-                    <Link
-                        href={item.href}
-                        className={`ibm-plex-mono-semibold block text-base uppercase font-semibold mb-2 ${
-                            isActive
-                                ? 'text-purple-500'
-                                : 'hover:text-mypurple hover:border-b rounded hover:border-mypurple'
-                        }`}
-                        onClick={toggleNav}
-                    >
-                        {item.name}
-                    </Link>
-                )}
+                            return (
+                                <div key={item.id}>
+                                    {/* If the item has subLinks, render just the label (not a link) */}
+                                    {item.subLinks ? (
+                                        <div className="ibm-plex-mono-semibold text-base uppercase font-semibold mb-2">
+                                            {item.name}
+                                        </div>
+                                    ) : (
+                                        <Link
+                                            href={item.href}
+                                            className={`ibm-plex-mono-semibold block text-base uppercase font-semibold mb-2 ${isActive
+                                                    ? 'text-purple-500'
+                                                    : 'hover:text-mypurple hover:border-b rounded hover:border-mypurple'
+                                                }`}
+                                            onClick={toggleNav}
+                                        >
+                                            {item.name}
+                                        </Link>
+                                    )}
 
-                {/* Render subLinks if they exist */}
-                {item.subLinks?.map((sub) => {
-                    const isSubActive = pathname === sub.href;
-                    return (
-                        <Link
-                            key={sub.id}
-                            href={sub.href}
-                            className={`block ml-4 text-sm font-medium mb-2 ${
-                                isSubActive
-                                    ? 'text-purple-500'
-                                    : 'hover:text-mypurple'
-                            }`}
-                            onClick={toggleNav}
-                        >
-                            └ {sub.name}
-                        </Link>
-                    );
-                })}
-            </div>
-        );
-    })}
-</nav>
-
-
+                                    {/* Render subLinks if they exist */}
+                                    {item.subLinks?.map((sub) => {
+                                        const isSubActive = pathname === sub.href;
+                                        return (
+                                            <Link
+                                                key={sub.id}
+                                                href={sub.href}
+                                                className={`block ml-4 text-sm font-medium mb-2 ${isSubActive
+                                                        ? 'text-purple-500'
+                                                        : 'hover:text-mypurple'
+                                                    }`}
+                                                onClick={toggleNav}
+                                            >
+                                                └ {sub.name}
+                                            </Link>
+                                        );
+                                    })}
+                                </div>
+                            );
+                        })}
+                    </nav>
 
                 </div>
             )}

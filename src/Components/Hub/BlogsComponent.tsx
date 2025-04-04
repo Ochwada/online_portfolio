@@ -98,9 +98,16 @@ const BlogsComponent: React.FC = () => {
                                                 {post.platform === "dev" && (
                                                     <FaDev className="text-fuchsia-500 w-6 h-6" />
                                                 )}
+                                                <a 
+                                                    href={post.link}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="text-sm text-purple-500 font-medium">
                                                 <h2 className="text-base font-semibold underline underline-offset-2">
                                                     {post.title}
                                                 </h2>
+                                                </a>
+                                                
                                             </div>
                                             <p className="text-sm pt-2">{post.description}</p>
                                         </div>
@@ -176,7 +183,7 @@ const BlogsComponent: React.FC = () => {
                         )}
                     </div>
                     {/* Sidebar */}
-                    <BlogsSideBar currentPost={filteredPosts[1]} />
+                    <BlogsSideBar currentPost={filteredPosts[0]} />
                 </div>
 
             </div>

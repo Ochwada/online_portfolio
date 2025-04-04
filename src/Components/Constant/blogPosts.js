@@ -1,10 +1,19 @@
 export const blogPosts = [
   {
+    id: 8,
+    title: "Accessing Population Density Data via WFS using Python",
+    platform: "dev",
+    link: "https://dev.to/ochwada/accessing-population-density-data-via-wfs-using-python-2f8c",
+    description: "Automated retrieval of Berlin’s 2023 population density (Einwohnerdichte) using Python, GeoPandas, and OWSLib by accessing the official Geoportal WFS endpoint and saving the data as GeoJSON.",
+    date: "2025-04-04",
+    tags: ["Python", "Geopandas", "geospatial", "data download", "geodata", "wfs", "OWSLib"]
+  },
+  {
     id: 1,
     title: "Preparations for PyTorch and DirectML on AMD Ryzen 9 6950H for AI Projects",
     platform: "medium",
     link: "https://medium.com/@ochwada/preparations-for-pytorch-and-directml-on-amd-ryzen-9-6950h-for-ai-projects-15c164d22332",
-    description: "Preparating for the Building Detection using PyTorch and DirectML on AMD Ryzen 9 6950H.",
+    description: "Setting up the environment for AI workflows using PyTorch with DirectML acceleration on an AMD Ryzen 9 6950H.",
     date: "2025-01-10",
     tags: ["pytorch", "directml", "amd", "ai", "deep learning"]
   },
@@ -13,18 +22,18 @@ export const blogPosts = [
     title: "Preparing High-Resolution DOP from for Building Detection",
     platform: "medium",
     link: "https://medium.com/@ochwada/preparing-aerial-images-for-building-detection-using-the-dgm1-tiff-dataset-0317e804628f",
-    description: "Explore how to prepare DOP data from OpenGeodata NRW for building detection.",
+    description: "Explore how to prepare Digital Orthophotos (DOP) data from OpenGeodata NRW for building detection.",
     date: "2025-01-01",
-    tags: ["dop", "remote sensing", "geospatial", "building detection", "aerial imagery"]
+    tags: ["dop", "remote sensing", "geospatial", "building detection", "aerial imagery", "dataset", "geodata"]
   },
   {
     id: 5,
     title: "Automated Retrieval and Exploration of SpaceNet 6 Dataset",
     platform: "medium",
     link: "https://medium.com/@ochwada/automated-data-access-and-exploration-ceb3eee1374c",
-    description: "Downloading SpaceNet 6 dataset focusing on AOI 11 (Rotterdam), using Python Scripts on AWS",
+    description: "Efficiently accessing and exploring AOI 11 (Rotterdam) from the SpaceNet 6 dataset using Python scripts on AWS for geospatial and remote sensing applications.",
     date: "2024-12-30",
-    tags: ["spacenet", "dataset", "python", "aws", "geospatial", "remote sensing"]
+    tags: ["spacenet", "dataset", "python", "aws", "geospatial", "remote sensing", "data download"]
   },
   {
     id: 6,
