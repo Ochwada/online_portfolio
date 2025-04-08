@@ -4,7 +4,7 @@ import React from "react";
 
 import Header from "@/Components/Shared/Header";
 import Footer from "@/Components/Shared/Footer";
-import BlogsComponent from "@/Components/Hub/BlogsComponent";
+import BlogsComponent from "@/Components/Hub/blogs/BlogsComponent";
 
 const BlogsPage: React.FC = () => {
 

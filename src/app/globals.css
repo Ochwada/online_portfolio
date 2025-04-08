@@ -159,7 +159,7 @@
   z-index: -1; /* Ensure it stays behind the main content */
 }
 /*------------------------------- ---------------------------------------------------- */
-/*------------------------------- MILESTONE Background ------------------------------- */
+/*------------------------------- BLOG Background ------------------------------- */
 .blog-background {
   position: relative;
 }
@@ -179,7 +179,7 @@
   z-index: -1; /* Ensure it stays behind the main content */
 }
 /*------------------------------- ---------------------------------------------------- */
-/*------------------------------- MILESTONE Background ------------------------------- */
+/*------------------------------- CONTACTS Background ------------------------------- */
 .contact-background {
   position: relative;
 }
@@ -192,6 +192,26 @@
   right: 0;
   bottom: 0;
   background-image: url('/oooscillate.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.19; /* Set the SVG background opacity to 50% */
+  z-index: -1; /* Ensure it stays behind the main content */
+}
+
+/*------------------------------- EVENTS Background ------------------------------- */
+.event-background {
+  position: relative;
+}
+
+.event-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/assets/events/techgala.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
