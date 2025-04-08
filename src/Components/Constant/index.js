@@ -5,6 +5,7 @@ import React from 'react';
 
 // ------------------------------------------- Blogs --------------------
 export { blogPosts } from "./blogPosts";
+export {eventsPosts} from "./events";
 // ------------------------------------------- Projects Navigation --------------------
 //export { projectsNavigation } from "./projectsNavigation";
 export const projectsNavigation = [
@@ -164,6 +165,11 @@ export const navigation = [
                 id: 9,
                 name: "Blog",
                 href: "/hub/blogs",
+            },
+            {
+                id: 11,
+                name: "Events",
+                href: "/hub/events",
             },
             {
                 id: 10,

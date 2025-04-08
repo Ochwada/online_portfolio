@@ -2,14 +2,7 @@
 
 import React, { useState } from "react";
 //import { FaMedium, FaDev } from "react-icons/fa";
-import {
-    FaTwitter,
-    FaLinkedin,
-    FaWhatsapp,
-    FaLink,
-    FaMedium,
-    FaDev,
-} from "react-icons/fa";
+import { FaTwitter, FaLinkedin,  FaWhatsapp, FaLink,  FaMedium,  FaDev} from "react-icons/fa";
 import { blogPosts } from "@/Components/Constant";
 import BlogsSideBar from "./BlogsSideBar";
 
