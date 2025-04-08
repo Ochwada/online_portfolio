@@ -4,7 +4,7 @@ import React from "react";
 
 import Header from "@/Components/Shared/Header";
 import Footer from "@/Components/Shared/Footer";
-import Contact from "@/Components/Hub/Contact";
+import Contact from "@/Components/Hub/contacts/Contact";
 
 const Contacts: React.FC = () => {
 

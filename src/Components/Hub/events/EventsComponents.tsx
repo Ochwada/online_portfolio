@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { eventsPosts } from "@/Components/Constant";
+import CategoryFilter from "./CategoryFilter";
+
 
 const toolColors: Record<string, { bg: string; text: string }> = {
-    "#Panel Discussion": { bg: "bg-indigo-100", text: "text-indigo-800" },
-    "#Speaker": { bg: "bg-rose-100", text: "text-rose-800" },
+    "#Panel Discussion": { bg: "bg-red-100", text: "text-red-800" },
+    "#Speaker": { bg: "bg-orange-100", text: "text-orange-800" },
     "#In Person": { bg: "bg-teal-100", text: "text-teal-800" },
     "#Virtual": { bg: "bg-green-100", text: "text-green-800" },
     "#Product Presentation": { bg: "bg-amber-100", text: "text-amber-800" },
@@ -11,9 +13,12 @@ const toolColors: Record<string, { bg: string; text: string }> = {
     "#Mentions / Celebrated": { bg: "bg-indigo-100", text: "text-indigo-800" },
     "#Newspaper": { bg: "bg-cyan-100", text: "text-cyan-800" },
     "#Interview": { bg: "bg-blue-100", text: "text-blue-800" },
-    "#Hosted Workshops": { bg: "bg-blue-100", text: "text-blue-800" },
-    "#Podcast": { bg: "bg-blue-100", text: "text-blue-800" },
-    "#Roundtable": { bg: "bg-blue-100", text: "text-blue-800" },
+    "#Hosted Workshops": { bg: "bg-slate-100", text: "text-slate-800" },
+    "#Podcast": { bg: "bg-pink-100", text: "text-pink-800" },
+    "#Roundtable": { bg: "bg-yellow-100", text: "text-yellow-800" },
+    "#Product": { bg: "bg-lime-100", text: "text-lime-800" },
+    "#Demo": { bg: "bg-sky-100", text: "text-sky-800" },
+
 
     // Add more tag styles as needed
 };
@@ -26,6 +31,7 @@ const getStyleFor = (label: string) => {
 const EventsComponents: React.FC = () => {
     const [selectedTag, setSelectedTag] = useState<string | null>(null);
     const [showAll, setShowAll] = useState<boolean>(false);
+    const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
     const handleTagClick = (tag: string) => {
         setSelectedTag(tag);
@@ -37,6 +43,11 @@ const EventsComponents: React.FC = () => {
         setShowAll(false);
     };
 
+    const allCategories = Array.from(
+        new Set(eventsPosts.flatMap((post) => post.category || []))
+    );
+
+
     const today = new Date().toISOString().split("T")[0];
 
     // Sort helper (YYYY-MM-DD format works lexicographically)
@@ -45,14 +56,23 @@ const EventsComponents: React.FC = () => {
     const pastEvents = sortedEvents.filter((post) => post.date < today);
     const futureEvents = sortedEvents.filter((post) => post.date >= today);
 
+    const filterByCategory = (posts: typeof eventsPosts) => {
+        return selectedCategory
+            ? posts.filter((post) => post.category?.includes(selectedCategory))
+            : posts;
+    };
 
-    const filteredPastEvents = selectedTag
-        ? pastEvents.filter((post) => post.tag?.includes(selectedTag))
-        : pastEvents;
+    const filteredPastEvents = filterByCategory(
+        selectedTag
+            ? pastEvents.filter((post) => post.tag?.includes(selectedTag))
+            : pastEvents
+    );
 
-    const filteredFutureEvents = selectedTag
-        ? futureEvents.filter((post) => post.tag?.includes(selectedTag))
-        : futureEvents;
+    const filteredFutureEvents = filterByCategory(
+        selectedTag
+            ? futureEvents.filter((post) => post.tag?.includes(selectedTag))
+            : futureEvents
+    );
 
     const visiblePastEvents = showAll
         ? filteredPastEvents
@@ -96,6 +116,11 @@ const EventsComponents: React.FC = () => {
                         </button>
                     </div>
                 )}
+                <CategoryFilter
+                    categories={allCategories}
+                    selectedCategory={selectedCategory}
+                    onChange={setSelectedCategory}
+                />
 
                 {/* Upcoming Events */}
                 {filteredFutureEvents.length > 0 && (
@@ -193,7 +218,7 @@ const EventsComponents: React.FC = () => {
                                         return (
                                             <span
                                                 key={`cat-${i}`}
-                                                className={`text-xs ${style.bg} ${style.text} px-2 py-0.5 rounded-full`}
+                                                className={`text-xs ${style.bg} ${style.text} px-2 py-0.5 rounded-xl`}
                                             >{cat}</span>
                                         );
                                     })}
@@ -202,7 +227,7 @@ const EventsComponents: React.FC = () => {
                                         return (
                                             <span
                                                 key={`sub-${i}`}
-                                                className={`text-xs ${style.bg} ${style.text} px-2 py-0.5 rounded-full`}
+                                                className={`text-xs ${style.bg} ${style.text} px-2 py-0.5 rounded-xl`}
                                             >{sub}</span>
                                         );
                                     })}
@@ -226,14 +251,19 @@ const EventsComponents: React.FC = () => {
                                     </div>
                                 </div>
 
-                                <a
-                                    href={post.eventLink}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="mt-3 text-xs text-purple-500 hover:underline"
-                                >
-                                    Read More ↗
-                                </a>
+                                {post.eventLink ? (
+                                    <a
+                                        href={post.eventLink}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="mt-3 text-xs text-purple-500 hover:underline"
+                                    >
+                                        Read More ↗
+                                    </a>
+                                ) : (
+                                    <span className="mt-3 text-xs text-gray-400 italic"> Link: (N/A)</span>
+                                )}
+
                             </div>
                         </div>
                     ))}
