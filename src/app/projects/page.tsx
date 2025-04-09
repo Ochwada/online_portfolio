@@ -24,7 +24,7 @@ const Projects: React.FC = () => {
         const totalProjects = projectsNavigation.length;
 
         const controls = animate(0, totalProjects, {
-            duration: 3,
+            duration: 5,
             onUpdate(value) {
                 setCount(Math.floor(value));
             },
@@ -32,7 +32,7 @@ const Projects: React.FC = () => {
 
         return () => controls.stop();
     }, []);
-
+// ----------------------------- --------------------  -------------------------------
 
     // Deduplicate categories using flatMap and Set
     const categories = Array.from(
