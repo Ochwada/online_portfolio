@@ -1,130 +1,14 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { animate, motion, useMotionValue, useTransform } from "motion/react"
-import Image from 'next/image';
-
+import { animate } from "motion/react"
 import Header from "@/Components/Shared/Header";
 import Footer from "@/Components/Shared/Footer";
 import { projectsNavigation } from "@/Components/Constant";
-//import { m } from "framer-motion";
-
-// Color mapping for tools
-const toolColors: Record<string, { bg: string; text: string }> = {
-    "#React": { bg: "bg-blue-100", text: "text-blue-800" },
-    "#TailwindCSS": { bg: "bg-pink-100", text: "text-pink-800" },
-    "#NextJS": { bg: "bg-green-100", text: "text-green-800" },
-    "#ThreeJS": { bg: "bg-sky-100", text: "text-sky-800" },
-    "#NodeJS": { bg: "bg-yellow-100", text: "text-yellow-800" },
-    "#Vite": { bg: "bg-orange-100", text: "text-orange-800" },
-    "#scss": { bg: "bg-purple-100", text: "text-purple-800" },
-
-    "#Sanity": { bg: "bg-red-100", text: "text-red-800" },
-    "#Netlify": { bg: "bg-slate-100", text: "text-slate-800" },
-
-    "#Python": { bg: "bg-cyan-100", text: "text-cyan-800" },
-    "#C": { bg: "bg-emerald-100", text: "text-emerald-800" },
-
-    "#Java": { bg: "bg-lime-100", text: "text-lime-800" },
-    "#Spring": { bg: "bg-rose-100", text: "text-rose-800" },
-    "#intellijIDEA": { bg: "bg-violet-100", text: "text-violet-800" },
+import {ProjectCard} from "@/Components/Projects/ProjectCard"
 
 
-};
-
-
-
-const ProjectCard: React.FC<{ project: typeof projectsNavigation[0]; onToolClick: (tool: string) => void }> = ({ project, onToolClick }) => (
-    <div className="flex flex-col mt-4 border border-dashed border-gray-500/[0.5] rounded p-2 shadow-lg hover:shadow-purple-500/50 transition-shadow duration-400">
-        <div className="flex-grow">
-            <Image
-                src={project.image}
-                alt={project.name}
-                layout="responsive"
-                width={300} // Adjust the value as per your layout needs
-                height={100} // Adjust the value as per your layout needs
-                className="w-full h-20 object-cover rounded-md mb-4 opacity-80"
-            />
-            <h2 className="text-base font-bold mb-2 ibm-plex-mono-semibold opacity-80">{project.name}</h2>
-            <div className="flex flex-wrap gap-2 mb-2 ">
-                {project.category.map((cat, index) => (
-                    <span
-                        key={index}
-                        className="ibm-plex-mono-semibold-italic py-1 text-xs"
-                    >
-                        {cat}
-                    </span>
-                ))}
-            </div>
-            <p className="text-xs mb-4 dancing-script-semibold  text-gray-500 dark:text-gray-400">{project.subcategory}</p>
-            <div className="flex flex-wrap gap-3 mb-2">
-                {project.tools.map((tool, index) => {
-                    const color = toolColors[tool] || { bg: "bg-gray-100", text: "text-gray-800" };
-                    return (
-                        <button
-                            key={index}
-                            onClick={() => onToolClick(tool)}
-                            className={`px-2 py-1 text-xs rounded ${color.bg} ${color.text} cursor-pointer`}
-                        >
-                            {tool}
-                        </button>
-                    );
-                })}
-            </div>
-        </div>
-        <div className="flex justify-between mx-2 border-t border-gray-300/[0.5] pt-2">
-            {/* GitHub Link */}
-            {project.git_href ? (
-                <a
-                    href={project.git_href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-purple-500 hover:underline font-bold text-sm"
-                >
-                    Code
-                </a>
-            ) : (
-                <span className="text-gray-400 font-bold text-xs">Code (N/A)</span>
-            )}
-
-            {/* Live Site Link */}
-            {project.web_href ? (
-                <a
-                    href={project.web_href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-purple-500 hover:underline font-bold text-xs"
-                >
-                    Live Site
-                </a>
-            ) : (
-                <span className="text-gray-400 font-bold text-xs">Live Site (N/A)</span>
-            )}
-
-            {/* More Info Link */}
-            {project.href ? (
-                <a
-                    href={project.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-purple-500 hover:underline font-bold text-xs"
-                >
-                    More Info
-                </a>
-            ) : (
-                <span className="text-gray-400 font-bold text-xs">More Info (N/A)</span>
-            )}
-        </div>
-    </div>
-);
-// ------------------ Frammer Motion ------------------
-
-const text = {
-    fontSize: 64,
-    color: "#7E60BF",
-}
-// ------------------ Frammer Motion END------------------
-// ------------------  ------------------- ---------------
+// -------------------------------------- New Constant Projects FC --------------------------------------
 
 const Projects: React.FC = () => {
     const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
@@ -132,22 +16,29 @@ const Projects: React.FC = () => {
     const [selectedTool, setSelectedTool] = useState<string | null>(null);
     const [visibleProjectsCount, setVisibleProjectsCount] = useState(8);
 
-    // ------------------ Frammer Motion ------------------
+// ----------------------------- Count the number of Projects -------------------------------
 
-    const count = useMotionValue(0)
-    const rounded = useTransform(() => Math.round(count.get()))
+    const [count, setCount] = useState(0);
 
     useEffect(() => {
-        const controls = animate(count, 10, { duration: 5 })
-        return () => controls.stop()
-    }, [])
-    // ------------------ Frammer Motion END------------------
-    // ------------------  ------------------- ---------------
+        const totalProjects = projectsNavigation.length;
+
+        const controls = animate(0, totalProjects, {
+            duration: 3,
+            onUpdate(value) {
+                setCount(Math.floor(value));
+            },
+        });
+
+        return () => controls.stop();
+    }, []);
+
 
     // Deduplicate categories using flatMap and Set
     const categories = Array.from(
         new Set(projectsNavigation.flatMap((project) => project.category))
     );
+
     const subcategories = selectedCategories.length
         ? Array.from(
             new Set(
@@ -201,9 +92,12 @@ const Projects: React.FC = () => {
                             Welcome to - A Journey Through My Projects - You will find a selection of my work right here, each representing
                             the passion and commitment I put into it.
                         </p>
-                        <div className="flex justify-center mb-6 ">
+                        <span className="flex justify-center mb-6 text-6xl font-bold text-mypink">
+                            {count}
+                        </span>
+                        {/* <div className="flex justify-center mb-6 ">
                             <motion.pre style={text}>{rounded}</motion.pre>
-                        </div>
+                        </div> */}
                         {/* Category Tabs */}
                         <div className="flex flex-wrap gap-2 sm:gap-4 mb-4 justify-start sm:justify-center overflow-x-auto">
                             <button

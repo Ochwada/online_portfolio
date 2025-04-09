@@ -6,118 +6,29 @@ import React from 'react';
 // ------------------------------------------- Blogs --------------------
 export { blogPosts } from "./blogPosts";
 export {eventsPosts} from "./events";
-// ------------------------------------------- Projects Navigation --------------------
-//export { projectsNavigation } from "./projectsNavigation";
-export const projectsNavigation = [
-    {
-        id: "javaProjects",
-        name: "Java Mini Projects (Learning Journey)",
-        git_href: "https://github.com/Ochwada/JavaProjects",
-        //web_href: " ",
-        href: "https://github.com/Ochwada/JavaProjects/blob/main/README.md",
-        image: '/assets/projects/java.png',
-        category: ["Backend & Data Eng."],
-        subcategory: "Core Java",
-        tools: ["#Java", "#intellijIDEA"],
-    },
-    {
-        id: "portfolio25",
-        name: "Portfolio - March 2025",
-        git_href: "https://github.com/Ochwada/online_portfolio",
-        web_href: "https://linda-ochwada.netlify.app/",
-        href: "https://github.com/Ochwada/online_portfolio/blob/main/README.md",
-        image: '/assets/present-port.png',
-        category: ["Web Dev."],
-        subcategory: "Frontend",
-        tools: ["#React", "#TailwindCSS", "#NextJS", '#Netlify'],
-    },
-    {
-        id: "ardhiapp",
-        name: "Ardhi Project - WebGIS Application",
-        git_href: "https://github.com/Ardhi-OWM/ardhi_supabase_clerk_latest",
-        web_href: "https://ardhi-app.netlify.app/",
-        href: "https://ardhi.slab.com/posts/what-is-ardhi-project-z0d01cz8?shr=EZiIPCLM0lt9h1C_2osUBQA_",
-        image: '/assets/ardhi_app.png',
-        category: ["Web Dev."],
-        subcategory: "Geospatial Frontend",
-        tools: ["#React", "#TailwindCSS", "#NextJS", '#Netlify'],
-    },
-    {
-        id: "ardhi",
-        name: "Ardhi Project - Landing Page",
-        git_href: "https://github.com/Ardhi-OWM/landing-page-v2-2025",
-        web_href: "https://ardhi.de/",
-        href: "https://ardhi.slab.com/posts/what-is-ardhi-project-z0d01cz8?shr=EZiIPCLM0lt9h1C_2osUBQA_",
-        image: '/assets/ardhi.png',
-        category: ["Web Dev."],
-        subcategory: "Frontend",
-        tools: ["#React", "#TailwindCSS", "#Vite"],
-    },
-    {
-        id: 'ProjectsProfile2023',
-        name: "Portfolio - May 2023",
-        git_href: "https://github.com/Ochwada/portfolios/tree/main/v2_2023/Ochwada_Profile_May2023",
-        web_href: "https://ochwada-23.netlify.app/",
-        href: "https://github.com/Ochwada/portfolios/blob/main/v2_2023/Ochwada_Profile_May2023/README.md",
-        image: '/assets/profile0523.png',
-        category: ["Web Dev."],
-        subcategory: "Frontend",
-        tools: ["#TailwindCSS", '#Netlify', "#React", "#Vite", "#ThreeJS", ],
-    },
-    {
-        id: 'clvprediction',
-        name: "Customer Lifetime Value Prediction",
-        git_href: "https://github.com/Ochwada/Software_Code_Pytho",
-        //web_href: "https://linda-ochwada.netlify.app/",
-        href: "https://github.com/Ochwada/Software_Code_Pytho/blob/master/README.md",
-        image: '/assets/clv.png',
-        category: ["Data Science & ML"],
-        subcategory: "Predictive Modeling",
-        tools: ["#Python",],
-    },
-    {
-        id: 'PhotosIntoCartoons1',
-        name: "Turn Photos into Cartoons",
-        git_href: "https://github.com/Ochwada/Data-Science-2023/blob/main/Photos%20into%20Cartoons/photo_to_catoons.ipynb",
-        //web_href: "https://linda-ochwada.netlify.app/",
-        href: "https://github.com/Ochwada/Data-Science-2023/blob/main/Photos%20into%20Cartoons/README.md",
-        image: '/assets/catoon.png',
-        category: ["Computer Vision"],
-        subcategory: "Image Style Transfer",
-        tools: ["#Python",],
-    },
-    {
-        id: 'laphawp',
-        name: "Location Analysis of Potential High Altitude Wind Power",
-        git_href: "https://github.com/Ochwada/Thesis_-Data_Analysis-Public",
-        //web_href: "https://linda-ochwada.netlify.app/",
-        href: "https://medium.com/@ochwada/location-analysis-of-potential-high-altitude-wind-power-afcb37c275aa",
-        image: '/assets/laphawp.png',
-        category: ["Geo-Analytics"],
-        subcategory: "Renewable Energy",
-        tools: ["#Python",],
-    },
-];
+export { projectsNavigation } from "./projects";
+export {toolColors} from "./toolColors";
+
 // -------------------------------------------Skills Section --------------------
 export const Skills = [
+    { name: "Tailwind", level: 0.9, distance: "orbit-2" },
+    { name: "GIS", level: 0.9, distance: "orbit-4" },
+
     { name: "SQL", level: 0.6, distance: "orbit-1" },
+    { name: "React", level: 0.6, distance: "orbit-3" },
+    { name: "Python", level: 0.6, distance: "orbit-5" },
 
-    { name: "React", level: 0.6, distance: "orbit-2" },
-    { name: "Python", level: 0.6, distance: "orbit-2" },
+    { name: "NextJS", level: 0.5, distance: "orbit-2" },
+    { name: "GIT", level: 0.5, distance: "orbit-4" },
 
-    { name: "Tailwind", level: 0.9, distance: "orbit-3" },
-    { name: "Java", level: 0.3, distance: "orbit-3" },
+    { name: "Java", level: 0.3, distance: "orbit-1" },
 
-    { name: "NodeJS", level: 0.2, distance: "orbit-4" },
-    { name: "NextJS", level: 0.5, distance: "orbit-4" },
+    { name: "NodeJS", level: 0.2, distance: "orbit-2" },
 
-    { name: "GIS", level: 0.9, distance: "orbit-5" },
+
+
   ];
 
-  // -------------------------------------------Projects Navigation --------------------
-
-
-  
 // -------------------------------------------Header Navigation --------------------
 export const navigation = [
     {

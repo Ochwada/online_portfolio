@@ -1,7 +1,7 @@
-
-
-
-
+{/*
+    Events
+    attended
+*/}
 
 export const eventsPosts = [
     {
