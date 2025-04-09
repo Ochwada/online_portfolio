@@ -92,8 +92,8 @@ const Projects: React.FC = () => {
                             Welcome to - A Journey Through My Projects - You will find a selection of my work right here, each representing
                             the passion and commitment I put into it.
                         </p>
-                        <span className="flex justify-center mb-6 text-6xl font-bold text-mypink">
-                            {count}
+                        <span className="flex justify-center my-10 text-4xl text-gray-500 dark:text-gray-400 ">
+                            No. of Projects: &nbsp; <span className="font-bold text-purple-500"> {count} </span>
                         </span>
                         {/* <div className="flex justify-center mb-6 ">
                             <motion.pre style={text}>{rounded}</motion.pre>
