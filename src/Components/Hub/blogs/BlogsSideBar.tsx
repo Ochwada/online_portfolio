@@ -36,7 +36,7 @@ const BlogsSideBar: React.FC<BlogsSideBarProps> = ({ currentPost }) => {
         <aside className="md:w-1/5 w-full mt-12 md:mt-0">
             {/* Related Blogs */}
             <div className="mb-10">
-                <h2 className="text-lg font-bold mb-4">🗺️ Related Blogs</h2>
+                <h2 className="text-lg font-bold mb-4">🗺️ Blogs Related to Latest Blog</h2>
                 {relatedPosts.length > 0 ? (
                     relatedPosts.map((post) => (
                         <a
