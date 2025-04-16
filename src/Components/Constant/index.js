@@ -73,7 +73,7 @@ export const navigation = [
         subLinks: [
             {
                 id: 9,
-                name: "Blog",
+                name: "Blogs",
                 href: "/hub/blogs",
             },
             {

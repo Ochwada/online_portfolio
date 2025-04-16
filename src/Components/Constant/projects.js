@@ -4,6 +4,17 @@
 
 export const projectsNavigation = [
     {
+        id: "greenAreas",
+        name: "Mapping Urban Green Space Accessibility (Berlin - Mitte)",
+        git_href: "https://github.com/Ochwada/GeoSpatial-Projects/tree/main/Urban%20Green%20Space%20Accessibility%20Map",
+        //web_href: " ",
+        href: "https://medium.com/@ochwada/mapping-urban-green-space-accessibility-berlin-mitte-project-and-data-acquisition-in-python-62c2850a2d6e",
+        image: '/assets/projects/accessibility3.png',
+        category: ["Geo-Analytics"],
+        subcategory: "Network Analysis",
+        tools: ["#Python", "#Pycharm"],
+    },
+    {
         id: "javaProjects",
         name: "Java Mini Projects (Learning Journey)",
         git_href: "https://github.com/Ochwada/JavaProjects",

@@ -1,4 +1,25 @@
+
+
+
 export const blogPosts = [
+  {
+    id: 10,
+    title: "Data Preprocessing & Processing (in Python): Mapping Urban Green Space Accessibility (Berlin -Mitte)",
+    platform: "medium",
+    link: "https://medium.com/@ochwada/mapping-urban-green-space-accessibility-berlin-mitte-data-preprocessing-processing-in-e75de56b28b6",
+    description: "A workflow to analyze walking accessibility to green spaces in Berlin, using open data and Python tools like osmnx, geopandas, and networkx.",
+    date: "2025-04-17",
+    tags: ["Python", "Geopandas", "geospatial", "geodata", "Data preprocessing"]
+  },
+  {
+    id: 9,
+    title: "Project and Data Acquisition (in Python): Mapping Urban Green Space Accessibility (Berlin -Mitte)",
+    platform: "medium",
+    link: "https://medium.com/@ochwada/mapping-urban-green-space-accessibility-berlin-mitte-project-and-data-acquisition-in-python-62c2850a2d6e",
+    description: "A workflow to analyze walking accessibility to green spaces in Berlin, using open data and Python tools like osmnx, geopandas, and networkx.",
+    date: "2025-04-16",
+    tags: ["Python", "Geopandas", "geospatial", "data download", "geodata"]
+  },
   {
     id: 8,
     title: "Accessing Population Density Data via WFS using Python",
