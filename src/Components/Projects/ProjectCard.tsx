@@ -16,6 +16,7 @@ export const ProjectCard: React.FC<{ project: typeof projectsNavigation[0]; onTo
                 className="w-full h-20 object-cover rounded-md mb-4 opacity-80"
             />
             <h2 className="text-base font-bold mb-2 ibm-plex-mono-semibold opacity-80">{project.name}</h2>
+            <p className="text-xs  space-grotesk-regular text-gray-500" > {project.description}</p>
             <div className="flex flex-wrap gap-2 mb-2 ">
                 {project.category.map((cat, index) => (
                     <span

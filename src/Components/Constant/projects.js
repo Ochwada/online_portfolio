@@ -5,7 +5,8 @@
 export const projectsNavigation = [
     {
         id: "SmartSupplyChain",
-        name: "Smart Supply Chain: Mastering Generics, OOP, Collections, Maven, and JUnit 5",
+        name: "Smart Supply Chain",
+        description:"Mastering Generics, OOP, Collections, Maven, and JUnit 5",
         git_href: "https://github.com/Ochwada/SmartSupplyChain-v2",
         //web_href: " ",
         href: "https://github.com/Ochwada/SmartSupplyChain-v2/blob/main/README.md",
@@ -27,7 +28,8 @@ export const projectsNavigation = [
     },
     {
         id: "javaProjects",
-        name: "Java Mini Projects (Learning Journey)",
+        name: "Java Mini Projects ",
+        description:"A Learning Journey ",
         git_href: "https://github.com/Ochwada/JavaProjects",
         //web_href: " ",
         href: "https://github.com/Ochwada/JavaProjects/blob/main/README.md",
