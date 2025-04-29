@@ -4,6 +4,17 @@
 
 export const projectsNavigation = [
     {
+        id: "SmartSupplyChain",
+        name: "Smart Supply Chain: Mastering Generics, OOP, Collections, Maven, and JUnit 5",
+        git_href: "https://github.com/Ochwada/SmartSupplyChain-v2",
+        //web_href: " ",
+        href: "https://github.com/Ochwada/SmartSupplyChain-v2/blob/main/README.md",
+        image: '/assets/projects/code.jpg',
+        category: ["Backend & Data Eng."],
+        subcategory: "Backend Engineering",
+        tools: ["#Java", "#intellijIDEA","#Maven"],
+    },
+    {
         id: "greenAreas",
         name: "Mapping Urban Green Space Accessibility (Berlin - Mitte)",
         git_href: "https://github.com/Ochwada/GeoSpatial-Projects/tree/main/Urban%20Green%20Space%20Accessibility%20Map",
