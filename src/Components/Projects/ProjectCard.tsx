@@ -3,7 +3,6 @@ import {projectsNavigation, toolColors} from "@/Components/Constant";
 import Image from "next/image";
 
 
-
 export const ProjectCard: React.FC<{ project: typeof projectsNavigation[0]; onToolClick: (tool: string) => void }> = ({ project, onToolClick }) => (
     <div className="flex flex-col mt-4 border border-dashed border-gray-500/[0.5] rounded p-2 shadow-lg hover:shadow-purple-500/50 transition-shadow duration-400">
         <div className="flex-grow">
