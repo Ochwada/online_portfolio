@@ -3,6 +3,8 @@
 import React from "react";
 import { FaGithubSquare, FaLinkedin, FaMedium, FaDev, FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
 
+import { SiLeetcode } from "react-icons/si";
+
 
 const Contact: React.FC = () => {
     return (
@@ -60,6 +62,13 @@ const Contact: React.FC = () => {
                                     rel="noopener noreferrer"
                                 >
                                     <FaDev className="w-10 h-10 text-mypurple hover:text-mypink transition" />
+                                </a>
+                                <a
+                                    href="https://leetcode.com/u/bz2rpqAHw2/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <SiLeetcode className="w-10 h-10 text-mypurple hover:text-mypink transition" />
                                 </a>
                                 <a
                                     href="https://www.facebook.com/ochwada.linda/"
