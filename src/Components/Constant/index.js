@@ -129,6 +129,14 @@ export const SocialMedia = [
         ariaLabel: "Dev",
     },
     {
+        id: 7,
+        name: "Leetcode",
+        href: "https://leetcode.com/u/bz2rpqAHw2/",
+        target: "_blank",
+        rel: "noopener noreferrer",
+        ariaLabel: "Leetcode",
+    },
+    {
         id: 1,
         name: "Facebook",
         href: "https://www.facebook.com/ochwada.linda/",

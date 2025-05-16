@@ -3,6 +3,7 @@
 
 import React from 'react';
 import { SocialMedia } from '@/Components/Constant';
+import { SiLeetcode } from "react-icons/si";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -45,6 +46,7 @@ const Footer: React.FC = () => {
                             {media.name === "GitHub" && <GitHubIcon className="w-auto h-6" />}
                             {media.name === "Medium" && <FaMedium className="w-auto h-6" />}
                             {media.name === "Dev" && <FaDev className="w-auto h-6" />}
+                            {media.name === "Leetcode" && <SiLeetcode className="w-auto h-6" />}
                             {media.name === "Facebook" && <FacebookIcon className="w-auto h-6" />}
                             {media.name === "Instagram" && <InstagramIcon className="w-auto h-6" />}
                             {/* {media.name === "Medium" && (
