@@ -74,14 +74,34 @@ const Home: React.FC = () => {
                   {text === fullText && (isBlinking ? "." : "")}
                 </span>
               </h1>
-              <p className="text-sm sm:text-base md:text-lg leading-relaxed">
-                Passionate about Geoinformatics and Technology, I blend technical expertise with strategic insight. Known for problem-solving and teamwork, 
-                I bring experience in <span className="text-purple-500 dancing-script-regular"> GIS & Remote Sensing Analytics, Project Management, 
-                  Software Development </span> and <span className="text-purple-500 dancing-script-regular"> Sales</span>. I drive impactful and innovative 
-                  solutions in every project. Eager to learn and share knowledge with my teams.
-              </p>
+              <div>
+                <p className="text-sm sm:text-base md:text-lg leading-relaxed mb-5">
+                  I am currently expanding my skills through the
+                  <span className={`text-pink-600 font-bold`}> Java Backend Engineering</span>
+                  <span className={`text-gray-300`}> – Future Women with Zalando program program </span> ,
+                  where I am deepening my backend development knowledge with a focus on scalable, modern Java applications.
+                </p>
+              </div>
+
+              <div>
+                <p className="text-sm sm:text-base md:text-lg leading-relaxed">
+                  Passionate about Geoinformatics and Technology, I blend technical expertise with strategic insight.
+                  Known for problem-solving and teamwork, I bring experience in
+                  <span className="text-purple-500 dancing-script-regular"> GIS & Remote Sensing Analytics, Project Management,
+                </span>
+                  <span className="text-purple-300 dancing-script-regular">
+                  Software Development
+                </span>
+                  and
+                  <span className="text-purple-500 dancing-script-regular"> Sales</span>.
+
+                  I drive impactful and innovative solutions in every project. Eager to learn and share knowledge with my teams.
+                </p>
+              </div>
             </div>
           </div>
+
+
         </div>
 
         {/* Fixed Footer */}

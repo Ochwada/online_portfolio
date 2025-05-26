@@ -4,7 +4,7 @@ import React from 'react';
 export const educationData = [
     {
         title: "Java Backend Engineering - Future Women with Zalando",
-        date: "March 2024 - Present",
+        date: "March 2025 - Present",
         description: "Certificate",
         institution: "StartSteps Digital Education GmbH",
         //project: ["Location Analysis of High Altitude Wind Energy in Germany"],
