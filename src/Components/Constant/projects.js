@@ -4,6 +4,18 @@
 
 export const projectsNavigation = [
     {
+        id: "ZalandoLite",
+        name: "ZalandoLite Backend",
+        description:"A minimalist backend service for the ZalandoLite mini project. Handles core functionalities like user management, product listings, and order processing in a simplified e-commerce setup.",
+        git_href: "https://github.com/Ochwada/ZalandoLite_V0.git",
+        //web_href: " ",
+        href: "https://github.com/Ochwada/ZalandoLite_V0/blob/main/README.md",
+        image: '/assets/projects/zalandoLite.png',
+        category: ["Backend & Data Eng."],
+        subcategory: "Backend Engineering",
+        tools: ["#Java", "#intellijIDEA","#Maven"],
+    },
+    {
         id: "SmartSupplyChain",
         name: "Smart Supply Chain",
         description:"Mastering Generics, OOP, Collections, Maven, and JUnit 5",
