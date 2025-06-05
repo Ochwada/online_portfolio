@@ -31,6 +31,8 @@ const BlogsComponent: React.FC = () => {
     const handleSeeMore = () => {
         setVisibleCount((prev) => prev + 6);
     };
+    // Count all blogs
+    const totalBlogs = blogPosts.length;
 
     // Filter blogs based on search query
     const filteredPosts = blogPosts.filter((post) =>
@@ -53,7 +55,6 @@ const BlogsComponent: React.FC = () => {
                     <br />
                     Feel free to <a href="/hub/contact" className="text-mypurple underline  font-bold" target="_blank"
                         rel="noopener noreferrer"> reach out </a>  if you have any questions or comments. Happy reading!
-
                 </p>
                 <div className="flex flex-col md:flex-row mt-16 px-4 sm:px-8">
 
@@ -72,6 +73,9 @@ const BlogsComponent: React.FC = () => {
                                 className="w-full max-w-md px-4 py-2 border border-gray-300 rounded-md focus:outline-none 
                                             focus:ring-2 focus:ring-mypink text-sm"
                             />
+                            <div className={`my-2`}>
+                                <p className={`font-bold`}>Total blogs : {totalBlogs}</p>
+                            </div>
                         </div>
 
                         {/* Blog Grid */}
