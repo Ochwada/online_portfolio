@@ -3,6 +3,15 @@
 
 export const blogPosts = [
   {
+    id: 11,
+    title: "My First Java Mini Project: ZalandoLite — Setup & Structure",
+    platform: "medium",
+    link: "https://medium.com/@ochwada/my-first-java-mini-project-zalandolite-setup-structure-8b0da2e80fcd",
+    description: "A Java Backend E-commerce Simulation Inspired by Real-World Online Store — Zalando",
+    date: "2025-06-05",
+    tags: ["Java", "e-commerce", "backend","OOP"]
+  },
+  {
     id: 10,
     title: "Data Preprocessing & Processing (in Python): Mapping Urban Green Space Accessibility (Berlin -Mitte)",
     platform: "medium",

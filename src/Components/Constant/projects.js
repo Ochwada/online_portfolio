@@ -9,7 +9,7 @@ export const projectsNavigation = [
         description:"A minimalist backend service for the ZalandoLite mini project. Handles core functionalities like user management, product listings, and order processing in a simplified e-commerce setup.",
         git_href: "https://github.com/Ochwada/ZalandoLite_V0.git",
         //web_href: " ",
-        href: "https://github.com/Ochwada/ZalandoLite_V0/blob/main/README.md",
+        href: "https://medium.com/@ochwada/my-first-java-mini-project-zalandolite-setup-structure-8b0da2e80fcd",
         image: '/assets/projects/zalandoLite.png',
         category: ["Backend & Data Eng."],
         subcategory: "Backend Engineering",
