@@ -8,6 +8,7 @@ export { blogPosts } from "./blogPosts";
 export {eventsPosts} from "./events";
 export { projectsNavigation } from "./projects";
 export {toolColors} from "./toolColors";
+export {awardsData} from "./awards";
 export {educationData, experienceData, trainingData} from "./milestones";
 
 // -------------------------------------------Skills Section --------------------
@@ -87,6 +88,11 @@ export const navigation = [
                 href: "/hub/contact",
             },
         ],
+    },
+    {
+        id: 11,
+        name: "Awards",
+        href: "/awards",
     },
 
 ];
