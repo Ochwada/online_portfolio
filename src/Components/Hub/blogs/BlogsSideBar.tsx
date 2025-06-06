@@ -82,7 +82,7 @@ const BlogsSideBar: React.FC<BlogsSideBarProps> = ({ currentPost }) => {
                             <span className="text-xs text-gray-700 dark:text-gray-300">
                                 {post.title}
                             </span>
-                            <p className="text-xs text-gray-400 text-right mt-1">
+                            <p className="text-[10px] text-gray-400 text-right mt-1">
                                 {formatDate(post.date)}
                             </p>
                         </a>
