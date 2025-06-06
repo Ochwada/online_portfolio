@@ -49,6 +49,12 @@ const BlogsSideBar: React.FC<BlogsSideBarProps> = ({ currentPost }) => {
                             <span className="text-xs text-mypurple font-medium">
                                 {post.title}
                             </span>
+                            <div className="text-right" >
+                                <span className="text-gray-500 text-[10px] self-end">
+                                    {post.date}
+                                </span>
+                            </div>
+
                     
                         </a>
                     ))
