@@ -3,6 +3,24 @@
 
 export const blogPosts = [
   {
+    id: 13,
+    title: "My First Java Mini Project: ZalandoLite — Testing It All with JUnit 5",
+    platform: "medium",
+    link: "https://medium.com/@ochwada/my-first-java-mini-project-zalandolite-testing-it-all-with-junit-5-d3ac02e7afd3",
+    description: "You have created your first Java backend mini — app. The logic works. The CLI runs. But how do you prove that your code is reliable?",
+    date: "2025-06-06",
+    tags: ["Java", "e-commerce", "backend","OOP"]
+  },
+  {
+    id: 12,
+    title: "My First Java Mini Project: Building 'ZalandoLite' — A Mini E-commerce Backend App",
+    platform: "medium",
+    link: "https://medium.com/@ochwada/my-first-java-mini-project-building-zalandolite-a-mini-e-commerce-backend-app-3612db2f0a69",
+    description: "Execution, Business Logic & Real-World Features: A Java Backend E-commerce Simulation Inspired by Real-World Online Store — Zalando",
+    date: "2025-06-06",
+    tags: ["Java", "e-commerce", "backend","OOP"]
+  },
+  {
     id: 11,
     title: "My First Java Mini Project: ZalandoLite — Setup & Structure",
     platform: "medium",
