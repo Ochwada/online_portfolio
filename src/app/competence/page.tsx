@@ -1,10 +1,15 @@
 "use client";
 
 import React from "react";
-
+import dynamic from 'next/dynamic';
 import Header from "@/Components/Shared/Header";
 import Footer from "@/Components/Shared/Footer";
 import Skills from "@/Components/Competence/Skills";
+import {Accordion, AccordionContent, AccordionItem, AccordionTrigger} from "@/Components/ui/accordion"
+//import DonutChart from "@/Components/Competence/DonutChart";
+const DonutChart = dynamic(() => import('@/Components/Competence/DonutChart'), {
+    ssr: false,
+});
 
 const Competence: React.FC = () => {
 
@@ -13,7 +18,7 @@ const Competence: React.FC = () => {
         <div className="flex flex-col min-h-screen competence-background mt-16">
             {/* Fixed Header */}
             <div className="fixed top-0 left-0 w-full z-50">
-                <Header />
+                <Header/>
             </div>
 
             {/* Page Content */}
@@ -23,17 +28,23 @@ const Competence: React.FC = () => {
                 {/* Main Content */}
                 <div className="p-4 sm:p-8 pb-2 mx-8 ">
                     <h1 className=" md:text-4xl text-2xl font-bold text-start mb-2">
-                        What are  areas of  my<span className="text-mypink"> expertise </span>?
+                        What are areas of my<span className="text-mypink"> expertise </span>?
                     </h1>
                     <div>
                         <p className="text-base mb-1 md:mx-16 text-justify">
-                            My expertise spans diverse fields. Each area represents a cornerstone of my professional journey,
-                            reflecting my commitment to mastering tools, technologies, and strategies that drive innovation and 
-                            create meaningful solutions  tailored to complex challenges. I am dedicated to continuous learning 
-                            and growth, ensuring that I stay at the forefront of industry trends and best practices. &nbsp;
-                            <a href="/projects" target="_blank" className="text-purple-500 text-xs font-bold underline underline-offset-1"> LEARN MORE </a>
+                            My expertise spans diverse fields. Each area represents a cornerstone of my professional
+                            journey,
+                            reflecting my commitment to mastering tools, technologies, and strategies that drive
+                            innovation and
+                            create meaningful solutions tailored to complex challenges. I am dedicated to continuous
+                            learning
+                            and growth, ensuring that I stay at the forefront of industry trends and best
+                            practices. &nbsp;
+                            <a href="/projects" target="_blank"
+                               className="text-purple-500 text-xs font-bold underline underline-offset-1"> LEARN
+                                MORE </a>
                         </p>
-                        
+
                     </div>
 
                     {/* Competence Cards */}
@@ -56,7 +67,63 @@ const Competence: React.FC = () => {
                         ))}
                     </div> */}
                     <div>
-                        <Skills />
+                        <Skills/>
+                    </div>
+                    <div className="md:text-3xl text-2xl font-bold text-start mb-8">
+                        <h2><span className="text-mypink"> Skills  | </span> Tech Stack </h2>
+                        <Accordion
+                            type="single"
+                            collapsible
+                            className="w-full"
+                            defaultValue="item-1">
+                            <AccordionItem value="item-1">
+                                <AccordionTrigger className="ibm-plex-mono-regular text-purple-600"> Programming Languages</AccordionTrigger>
+                                <AccordionContent>
+                                    <div className="grid grid-cols-2 gap-3 items-center">
+                                        <div className="grid grid-cols-2 gap-3 items-center">
+                                            <div>Java</div>
+                                            <div className="flex items-center gap-2">
+                                                <DonutChart  value={0.4} />
+                                                <span className="text-sm">0.4</span>
+                                            </div>
+                                        </div>
+
+                                        <div className="grid grid-cols-2 gap-3 items-center">
+                                            <div>Python</div>
+                                            <div className="flex items-center gap-2">
+                                                <DonutChart  value={0.6} />
+                                                <span className="text-sm">0.6</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </AccordionContent>
+
+                            </AccordionItem>
+                            <AccordionItem value="item-2">
+                                <AccordionTrigger className="ibm-plex-mono-regular text-purple-600"> Frameworks & Technologies</AccordionTrigger>
+                                <AccordionContent>
+                                    <div className="grid grid-cols-2 gap-3 items-center">
+                                        <div className="grid grid-cols-2 gap-3 items-center">
+                                            <div>Java</div>
+                                            <div className="flex items-center gap-2">
+                                                <DonutChart  value={0.4} />
+                                                <span className="text-sm">0.4</span>
+                                            </div>
+                                        </div>
+
+                                        <div className="grid grid-cols-2 gap-3 items-center">
+                                            <div>Python</div>
+                                            <div className="flex items-center gap-2">
+                                                <DonutChart  value={0.6} />
+                                                <span className="text-sm">0.6</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </AccordionContent>
+
+                            </AccordionItem>
+
+                        </Accordion>
                     </div>
                 </div>
 
@@ -64,7 +131,7 @@ const Competence: React.FC = () => {
 
             {/* Fixed Footer */}
             <div className="fixed bottom-0 left-0 w-full z-50">
-                <Footer />
+                <Footer/>
             </div>
         </div>
 
