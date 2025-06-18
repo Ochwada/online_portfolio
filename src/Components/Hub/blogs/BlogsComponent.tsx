@@ -34,7 +34,7 @@ const BlogsComponent: React.FC = () => {
     // Count all blogs
     const totalBlogs = blogPosts.length;
 
-    // Filter blogs based on search query
+    // Filter blogs based on a search query
     const filteredPosts = blogPosts.filter((post) =>
         post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
         post.description.toLowerCase().includes(searchQuery.toLowerCase())

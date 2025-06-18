@@ -4,9 +4,9 @@ import React from "react";
 import { Skills as skills } from "@/Components/Constant";
 
 const getLevelColor = (level: number): string => {
-  if (level <= 0.3) return "bg-pink-400";
+  if (level <= 0.3) return "bg-blue-400";
   if (level <= 0.5) return "bg-purple-400";
-  if (level <= 0.7) return "bg-blue-400";
+  if (level <= 0.7) return "bg-pink-400";
   return "bg-green-400";
 };
 

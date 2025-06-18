@@ -9,16 +9,16 @@ class DonutChart extends Component<{ value: number }> {
 
         // Color mapping for value steps
         const COLORS: { [key: number]: string } = {
-            0.1: '#FF6633',
-            0.2: '#FFB399',
-            0.3: '#89b120',
-            0.4: '#f3f30d',
-            0.5: '#00B3E6',
-            0.6: '#d134dc',
-            0.7: '#3366E6',
-            0.8: '#999966',
-            0.9: '#99FF99',
-            1.0: '#B34D4D',
+            0.1: '#60A5FA',
+            0.2: '#60A5FA',
+            0.3: '#60A5FA',
+            0.4: '#C084FC',
+            0.5: '#C084FC',
+            0.6: '#df26a5',
+            0.7: '#df26a5',
+            0.8: '#4ADE80',
+            0.9: '#4ADE80',
+            1.0: '#4ADE80',
         };
 
         // Round to nearest 0.1 for color matching
@@ -35,7 +35,7 @@ class DonutChart extends Component<{ value: number }> {
                     data={data}
                     cx="50%"
                     cy="50%"
-                    innerRadius={12}
+                    innerRadius={8}
                     outerRadius={16}
                     startAngle={90}
                     endAngle={-270}

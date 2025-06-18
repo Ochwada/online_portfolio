@@ -1,15 +1,10 @@
 "use client";
 
 import React from "react";
-import dynamic from 'next/dynamic';
 import Header from "@/Components/Shared/Header";
 import Footer from "@/Components/Shared/Footer";
 import Skills from "@/Components/Competence/Skills";
-import {Accordion, AccordionContent, AccordionItem, AccordionTrigger} from "@/Components/ui/accordion"
-//import DonutChart from "@/Components/Competence/DonutChart";
-const DonutChart = dynamic(() => import('@/Components/Competence/DonutChart'), {
-    ssr: false,
-});
+import TechStack from "@/Components/Competence/TechStack";
 
 const Competence: React.FC = () => {
 
@@ -46,84 +41,13 @@ const Competence: React.FC = () => {
                         </p>
 
                     </div>
-
-                    {/* Competence Cards */}
-                    {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6  md:h-72 ">
-                        {competence.map((item) => (
-                            <div
-                                key={item.id}
-                                className="bg-gray-300/[0.25] comp-img h-48 w-full border border-dashed border-gray-500/[0.50] rounded
-                                flex flex-col justify-between p-4 "
-                            >
-                                <h2 className="text-lg font-bold uppercase">{item.name}</h2>
-                                <p className="text-sm ">{item.description}</p>
-                                <a
-                                    href={item.href}
-                                    className=" mt-4 font-bold hover:underline  underline-offset-4 text-xs uppercase "
-                                >
-                                    More info...
-                                </a>
-                            </div>
-                        ))}
-                    </div> */}
                     <div>
                         <Skills/>
                     </div>
                     <div className="md:text-3xl text-2xl font-bold text-start mb-8">
                         <h2><span className="text-mypink"> Skills  | </span> Tech Stack </h2>
-                        <Accordion
-                            type="single"
-                            collapsible
-                            className="w-full"
-                            defaultValue="item-1">
-                            <AccordionItem value="item-1">
-                                <AccordionTrigger className="ibm-plex-mono-regular text-purple-600"> Programming Languages</AccordionTrigger>
-                                <AccordionContent>
-                                    <div className="grid grid-cols-2 gap-3 items-center">
-                                        <div className="grid grid-cols-2 gap-3 items-center">
-                                            <div>Java</div>
-                                            <div className="flex items-center gap-2">
-                                                <DonutChart  value={0.4} />
-                                                <span className="text-sm">0.4</span>
-                                            </div>
-                                        </div>
+                        <TechStack/>
 
-                                        <div className="grid grid-cols-2 gap-3 items-center">
-                                            <div>Python</div>
-                                            <div className="flex items-center gap-2">
-                                                <DonutChart  value={0.6} />
-                                                <span className="text-sm">0.6</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </AccordionContent>
-
-                            </AccordionItem>
-                            <AccordionItem value="item-2">
-                                <AccordionTrigger className="ibm-plex-mono-regular text-purple-600"> Frameworks & Technologies</AccordionTrigger>
-                                <AccordionContent>
-                                    <div className="grid grid-cols-2 gap-3 items-center">
-                                        <div className="grid grid-cols-2 gap-3 items-center">
-                                            <div>Java</div>
-                                            <div className="flex items-center gap-2">
-                                                <DonutChart  value={0.4} />
-                                                <span className="text-sm">0.4</span>
-                                            </div>
-                                        </div>
-
-                                        <div className="grid grid-cols-2 gap-3 items-center">
-                                            <div>Python</div>
-                                            <div className="flex items-center gap-2">
-                                                <DonutChart  value={0.6} />
-                                                <span className="text-sm">0.6</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </AccordionContent>
-
-                            </AccordionItem>
-
-                        </Accordion>
                     </div>
                 </div>
 

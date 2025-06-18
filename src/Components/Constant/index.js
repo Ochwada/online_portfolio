@@ -23,7 +23,7 @@ export const Skills = [
     { name: "NextJS", level: 0.5, distance: "orbit-2" },
     { name: "GIT", level: 0.5, distance: "orbit-4" },
 
-    { name: "Java", level: 0.3, distance: "orbit-1" },
+    { name: "Java", level: 0.4, distance: "orbit-1" },
 
     { name: "NodeJS", level: 0.2, distance: "orbit-2" },
 
