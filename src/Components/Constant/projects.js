@@ -12,7 +12,7 @@ export const projectsNavigation = [
         href: "https://medium.com/@ochwada/my-first-java-mini-project-zalandolite-setup-structure-8b0da2e80fcd",
         image: '/assets/projects/zalandoLite.png',
         category: ["Backend & Data Eng."],
-        subcategory: "Backend Engineering",
+        subcategory: "Core Java",
         tools: ["#Java", "#intellijIDEA","#Maven"],
     },
     {
@@ -24,7 +24,7 @@ export const projectsNavigation = [
         href: "https://github.com/Ochwada/JavaProjects/blob/main/00_Beginner_Projects(Data%20Structure)/beginner-SmartSupplyChain-v2/README.md",
         image: '/assets/projects/code.jpg',
         category: ["Backend & Data Eng."],
-        subcategory: "Backend Engineering",
+        subcategory: "Core Java",
         tools: ["#Java", "#intellijIDEA","#Maven"],
     },
     {
