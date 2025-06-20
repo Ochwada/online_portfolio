@@ -40,7 +40,7 @@ export const projectsNavigation = [
     },
     {
         id: "javaProjects",
-        name: "Java Mini Projects ",
+        name: "Core Java - Mini Projects ",
         description:"A Learning Journey ",
         git_href: "https://github.com/Ochwada/JavaProjects",
         //web_href: " ",
