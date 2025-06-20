@@ -5,7 +5,7 @@
 export const projectsNavigation = [
     {
         id: "ZalandoLite",
-        name: "ZalandoLite Backend",
+        name: "ZalandoLite - maven",
         description:"A minimalist backend service for the ZalandoLite mini project. Handles core functionalities like user management, product listings, and order processing in a simplified e-commerce setup.",
         git_href: "https://github.com/Ochwada/ZalandoLite_V0.git",
         //web_href: " ",
@@ -41,7 +41,7 @@ export const projectsNavigation = [
     {
         id: "javaProjects",
         name: "Core Java - Mini Projects ",
-        description:"A Learning Journey ",
+        description:"A collection of core Java projects. These projects demonstrate the use of OOP, collections, generics, file handling, and basic algorithms—laying a solid groundwork for enterprise-level development. ",
         git_href: "https://github.com/Ochwada/JavaProjects",
         //web_href: " ",
         href: "https://github.com/Ochwada/JavaProjects/blob/main/README.md",
