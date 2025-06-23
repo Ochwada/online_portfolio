@@ -10,6 +10,7 @@ export { projectsNavigation } from "./projects";
 export {toolColors} from "./toolColors";
 export {awardsData} from "./awards";
 export {educationData, experienceData, trainingData} from "./milestones";
+export {techData} from "./techdata";
 
 // -------------------------------------------Skills Section --------------------
 export const Skills = [
