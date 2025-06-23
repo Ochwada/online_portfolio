@@ -4,6 +4,18 @@
 
 export const projectsNavigation = [
     {
+        id: "SpringBoot",
+        name: "SpringBoot - Mini Projects ",
+        description:"A hands-on collection of Spring Boot mini-projects created during my transition from Core Java to modern backend engineering — showcasing REST APIs, data handling, and integration with industry-standard tools.",
+        git_href: "https://github.com/Ochwada/JavaProjects-Springboot.git",
+        //web_href: " ",
+        href: "https://github.com/Ochwada/JavaProjects-Springboot/blob/main/README.md",
+        image: '/assets/projects/springboot1.jpg',
+        category: ["Backend & Data Eng."],
+        subcategory: "Spring Boot",
+        tools: ["#Java", "#intellijIDEA","#Maven", "#SpringBoot"],
+    },
+    {
         id: "ZalandoLite",
         name: "ZalandoLite - maven",
         description:"A minimalist backend service for the ZalandoLite mini project. Handles core functionalities like user management, product listings, and order processing in a simplified e-commerce setup.",
