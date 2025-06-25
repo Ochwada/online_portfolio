@@ -50,7 +50,7 @@ const TechStack = () => {
                         {section.type === "grouped" && section.categories && section.categories.map((cat, catIdx) => (
                             <div key={catIdx} className="grid grid-cols-3 gap-3 items-center mt-4">
                                 <div>
-                                    <h3 className="ibm-plex-mono-semibold underline underline-offset-2">
+                                    <h3 className="ibm-plex-mono-semibold underline underline-offset-2 ">
                                         {cat.label}
                                     </h3>
                                 </div>

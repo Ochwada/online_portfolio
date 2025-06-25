@@ -4,7 +4,7 @@ export const techData = [
         type: "single",
         items: [
             { name: "C", value: 0.3 },
-            { name: "Java", value: 0.4 },
+            { name: "Java", value: 0.5 },
             { name: "JavaScript", value: 0.5 },
             { name: "Python", value: 0.6 },
             { name: "TypeScript", value: 0.5 },
