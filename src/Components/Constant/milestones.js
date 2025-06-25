@@ -108,6 +108,13 @@ export const trainingData = [
 // --------------------------------------------------------------------------------------
 export const experienceData = [
     {
+        position: "AI and Data Analyst",
+        date: "June 2025 - June 2026",
+        company: "Supported by the Kenya Education Network (KENET)",
+        description: ["Application of Earth Observation and Artificial Intelligence in Carbon Assessment in the Aberdare Forest, Kenya"],
+        companylink: "https://www.linkedin.com/feed/update/urn:li:activity:7341442188100231168/"
+    },
+    {
         position: "GIS Frontend Developer | Project Manager",
         date: "Sept 2024 - Present",
         company: "Ardhi Project (Berlin - DE)",
