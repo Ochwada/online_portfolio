@@ -112,7 +112,7 @@ export const experienceData = [
         date: "June 2025 - June 2026",
         company: "Supported by the Kenya Education Network (KENET)",
         description: ["Application of Earth Observation and Artificial Intelligence in Carbon Assessment in the Aberdare Forest, Kenya"],
-        companylink: "https://www.linkedin.com/feed/update/urn:li:activity:7341442188100231168/"
+        companylink: " "
     },
     {
         position: "GIS Frontend Developer | Project Manager",
