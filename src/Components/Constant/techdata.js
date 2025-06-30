@@ -8,6 +8,7 @@ export const techData = [
             { name: "JavaScript", value: 0.5 },
             { name: "Python", value: 0.6 },
             { name: "TypeScript", value: 0.5 },
+            { name: "SQL", value: 0.7 },
         ],
     },
     {
