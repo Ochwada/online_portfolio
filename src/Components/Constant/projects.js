@@ -13,7 +13,7 @@ export const projectsNavigation = [
         image: "/assets/projects/code.jpg",
         category: ["Backend & Data Eng."],
         subcategory: "SQL",
-        tools: ["#PostgreSQL", "#SQL", "#pgAdmin", "#DataModeling", "#psql"]
+        tools: ["#PostgreSQL", "#SQL", "#pgAdmin", "#psql"]
     },
     {
         id: "SpringBoot",
