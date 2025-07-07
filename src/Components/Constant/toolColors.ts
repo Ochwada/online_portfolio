@@ -3,6 +3,7 @@
 export const toolColors: Record<string, { bg: string; text: string }> = {
 
     // ---------------- Project Color Change --------------------------//
+    // -- Frontend
     "#React": { bg: "bg-blue-100", text: "text-blue-800" },
     "#TailwindCSS": { bg: "bg-pink-100", text: "text-pink-800" },
     "#NextJS": { bg: "bg-green-100", text: "text-green-800" },
@@ -10,20 +11,20 @@ export const toolColors: Record<string, { bg: string; text: string }> = {
     "#NodeJS": { bg: "bg-yellow-100", text: "text-yellow-800" },
     "#Vite": { bg: "bg-orange-100", text: "text-orange-800" },
     "#scss": { bg: "bg-purple-100", text: "text-purple-800" },
-
+    // -- Hosting
     "#Sanity": { bg: "bg-red-100", text: "text-red-800" },
     "#Netlify": { bg: "bg-slate-100", text: "text-slate-800" },
-
+    // -- Datascience
     "#Python": { bg: "bg-cyan-100", text: "text-cyan-800" },
     "#C": { bg: "bg-emerald-100", text: "text-emerald-800" },
-
+    // -- Backend
     "#Java": { bg: "bg-lime-100", text: "text-lime-800" },
     "#Spring": { bg: "bg-rose-100", text: "text-rose-800" },
     "#intellijIDEA": { bg: "bg-violet-100", text: "text-violet-800" },
     "#Pycharm": { bg: "bg-red-200", text: "text-red-700" },
     "#Maven": { bg: "bg-lime-50", text: "text-lime-900" },
     "#SQL": { bg: "bg-blue-100", text: "text-blue-800" },
-    "#Postgresql": { bg: "bg-pink-100", text: "text-pink-800" },
+    "#PostgreSQL": { bg: "bg-pink-100", text: "text-pink-800" },
     "#pgAdmin": { bg: "bg-green-100", text: "text-green-800" },
     "#psql": { bg: "bg-purple-100", text: "text-purple-800" },
 
