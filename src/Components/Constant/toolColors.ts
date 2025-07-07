@@ -20,8 +20,12 @@ export const toolColors: Record<string, { bg: string; text: string }> = {
     "#Java": { bg: "bg-lime-100", text: "text-lime-800" },
     "#Spring": { bg: "bg-rose-100", text: "text-rose-800" },
     "#intellijIDEA": { bg: "bg-violet-100", text: "text-violet-800" },
-    "#Pycharm": { bg: "bg-violet-200", text: "text-violet-700" },
+    "#Pycharm": { bg: "bg-red-200", text: "text-red-700" },
     "#Maven": { bg: "bg-lime-50", text: "text-lime-900" },
+    "#SQL": { bg: "bg-blue-100", text: "text-blue-800" },
+    "#Postgresql": { bg: "bg-pink-100", text: "text-pink-800" },
+    "#pgAdmin": { bg: "bg-green-100", text: "text-green-800" },
+    "#psql": { bg: "bg-purple-100", text: "text-purple-800" },
 
     // ------------------- ---------------- --------------------------//
     // ---------------- Events Color Change --------------------------//
