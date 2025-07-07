@@ -4,6 +4,18 @@
 
 export const projectsNavigation = [
     {
+        id: "sql-hr-system",
+        name: "SQL Data System for Employee and Department Management",
+        description: "A comprehensive SQL-based project simulating an HR system — includes 50+ real-world queries on employees, departments, and salaries using advanced SQL features like JOINs, subqueries, window functions, and indexing for performance analysis.",
+        git_href: "https://github.com/Ochwada/JavaProjects-Springboot/blob/main/SQL%20Practice/070425_sql/070125_Selecting-Data-from-Relational-Databases.sql",
+        // web_href: " ", // Add if you deploy or publish a live version
+        href: "https://github.com/Ochwada/JavaProjects-Springboot/blob/main/SQL%20Practice/070425_sql/README.md",
+        image: "/assets/projects/code.jpg",
+        category: ["Backend & Data Eng."],
+        subcategory: "SQL",
+        tools: ["#PostgreSQL", "#SQL", "#pgAdmin", "#DataModeling", "#psql"]
+    },
+    {
         id: "SpringBoot",
         name: "SpringBoot - Mini Projects ",
         description:"A hands-on collection of Spring Boot mini-projects created during my transition from Core Java to modern backend engineering — showcasing REST APIs, data handling, and integration with industry-standard tools.",
