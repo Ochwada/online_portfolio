@@ -3,6 +3,54 @@
 // -------------------------------------------Projects Navigation --------------------
 
 export const projectsNavigation = [
+    {
+        id: "ExpenseAssistant",
+        name: "Expense Assistant App",
+        description:"A full-stack Java REST API built with Spring Boot that helps travelers track their expenses globally. The app integrates real-time currency conversion (FreeCurrency API), live weather updates (OpenWeather API), and MongoDB for data persistence—fully containerized with Docker.",
+        git_href: "https://github.com/Ochwada/ExpenseAssistant",
+        //web_href: " ",
+        href: "https://github.com/Ochwada/ExpenseAssistant/blob/main/README.md",
+        image: '/assets/projects/code4.jpg',
+        category: ["Backend & Data Eng."],
+        subcategory: "Advanced Java",
+        tools: ["#RESTfulAPI", "#MongoDB", "#SpringBoot", "#Docker"],
+    },
+    {
+        id: "CurrencyConverter",
+        name: "Currency Converter App",
+        description:"A Currency Converter App using Spring Boot, designed to help users convert currencies in real-time using up-to-date exchange rates from an external API.",
+        git_href: "https://github.com/Ochwada/CurrencyConverter-DemoApp",
+        //web_href: " ",
+        href: "https://github.com/Ochwada/CurrencyConverter-DemoApp/blob/main/README.md",
+        image: '/assets/projects/code3.jpg',
+        category: ["Backend & Data Eng."],
+        subcategory: "Advanced Java",
+        tools: ["#RESTfulAPI", "#MongoDB", "#SpringBoot", "#FreeCurrencyAPI" ],
+    },
+    {
+        id: "TravelPlannerDemo",
+        name: "Travel Planner App",
+        description:"A Spring Boot-based RESTful API for planning travel itineraries and viewing weather forecasts. Provides endpoints for destination suggestions, itinerary management, and real-time weather integration.",
+        git_href: "https://github.com/Ochwada/TravelPlannerDemo",
+        //web_href: " ",
+        href: "https://github.com/Ochwada/TravelPlannerDemo/blob/main/README.md",
+        image: '/assets/projects/code2.jpg',
+        category: ["Backend & Data Eng."],
+        subcategory: "Advanced Java",
+        tools: ["#RESTfulAPI", "#MongoDB", "#SpringBoot", "#OpenWeatherAPI" ],
+    },
+    {
+        id: "HealthcareManagementSystem",
+        name: " Healthcare Management System",
+        description:"A Spring Boot application for managing healthcare entities such as patients, doctors, appointments, and medical records.",
+        git_href: "https://github.com/Ochwada/HealthcareManagementSystem",
+        //web_href: " ",
+        href: "https://github.com/Ochwada/HealthcareManagementSystem/blob/main/README.md",
+        image: '/assets/projects/code1.jpg',
+        category: ["Backend & Data Eng."],
+        subcategory: "Advanced Java",
+        tools: ["#RESTfulAPI", "#MongoDB", "#SpringBoot" ],
+    },
 //{
         //id: "sql-hr-system",
         //name: "SQL Data System - HR System",
@@ -15,7 +63,7 @@ export const projectsNavigation = [
         //subcategory: "SQL",
         //tools: [ "#psql" , "#SQL", "#pgAdmin", "#PostgreSQL"]
     // },
-    {
+    /**{
         id: "SpringBoot",
         name: "SpringBoot - Mini Projects ",
         description:"A hands-on collection of Spring Boot mini-projects created during my transition from Core Java to modern backend engineering — showcasing REST APIs, data handling, and integration with industry-standard tools.",
@@ -26,7 +74,7 @@ export const projectsNavigation = [
         category: ["Backend & Data Eng."],
         subcategory: "Spring Boot",
         tools: ["#Java", "#intellijIDEA","#Maven", "#SpringBoot"],
-    },
+    },*/
     {
         id: "ZalandoLite",
         name: "ZalandoLite - maven",
@@ -62,7 +110,7 @@ export const projectsNavigation = [
         subcategory: "Network Analysis",
         tools: ["#Python", "#Pycharm"],
     },
-    {
+    /**{
         id: "javaProjects",
         name: "Core Java - Mini Projects ",
         description:"A collection of core Java projects. These projects demonstrate the use of OOP, collections, generics, file handling, and basic algorithms—laying a solid groundwork for enterprise-level development. ",
@@ -73,7 +121,7 @@ export const projectsNavigation = [
         category: ["Backend & Data Eng."],
         subcategory: "Core Java",
         tools: ["#Java", "#intellijIDEA"],
-    },
+    },*/
     {
         id: "portfolio25",
         name: "Portfolio - March 2025",

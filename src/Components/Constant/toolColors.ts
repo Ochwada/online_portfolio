@@ -25,9 +25,14 @@ export const toolColors: Record<string, { bg: string; text: string }> = {
     "#Maven": { bg: "bg-lime-50", text: "text-lime-900" },
     "#SQL": { bg: "bg-blue-100", text: "text-blue-800" },
     "#PostgreSQL": { bg: "bg-pink-100", text: "text-pink-800" },
+    "#MongoDB": { bg: "bg-slate-100", text: "text-slate-800" },
     "#pgAdmin": { bg: "bg-green-100", text: "text-green-800" },
     "#psql": { bg: "bg-purple-100", text: "text-purple-800" },
-
+    "#SpringBoot": { bg: "bg-sky-100", text: "text-sky-800" },
+    "#RESTfulAPI": { bg: "bg-red-100", text: "text-red-800" },
+    "#OpenWeatherAPI": { bg: "bg-amber-100", text: "text-amber-800" },
+    "#FreeCurrencyAPI": { bg: "bg-teal-100", text: "text-teal-800" },
+    "#Docker": { bg: "bg-fuchsia-100", text: "text-fuchsia-800" },
     // ------------------- ---------------- --------------------------//
     // ---------------- Events Color Change --------------------------//
 

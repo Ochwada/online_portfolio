@@ -89,10 +89,10 @@ const Home: React.FC = () => {
                   Known for problem-solving and teamwork, I bring experience in
                   <span className="text-purple-500 dancing-script-regular"> GIS & Remote Sensing Analytics, Project Management,
                 </span>
-                  <span className="text-purple-300 dancing-script-regular">
-                  Software Development
-                </span>
-                  and
+                  <span className="text-purple-300 dancing-script-regular"> <span></span>
+                     Software Development
+                </span>  <span></span>
+                   and
                   <span className="text-purple-500 dancing-script-regular"> Sales</span>.
 
                   I drive impactful and innovative solutions in every project. Eager to learn and share knowledge with my teams.
