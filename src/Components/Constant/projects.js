@@ -3,6 +3,19 @@
 // -------------------------------------------Projects Navigation --------------------
 
 export const projectsNavigation = [
+
+    {
+        id: "SecureJokeVault",
+        name: "Secure Joke Vault",
+        description:"A Spring Boot REST API for secure joke sharing with JWT-based authentication and MongoDB for persistent storage and supports easy deployment using Docker.",
+        git_href: "https://github.com/Ochwada/Secure-Joke-Vault",
+        //web_href: " ",
+        href: "https://github.com/Ochwada/Secure-Joke-Vault/blob/main/README.md",
+        image: '/assets/projects/code5.jpg',
+        category: ["Backend & Data Eng."],
+        subcategory: "Advanced Java",
+        tools: ["#JWTAuthentication", "#MongoDB", "#SpringBoot", "#Docker", "#RESTfulAPI"],
+    },
     {
         id: "ExpenseAssistant",
         name: "Expense Assistant App",
