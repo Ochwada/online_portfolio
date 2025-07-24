@@ -62,9 +62,9 @@ export default function SkillsComponent() {
       {/* Skill Legend */}
       <div className="absolute z-20 top-2">
         <div className="mt-4 text-xs space-x-2 text-center flex flex-row items-center">
-          <div><span className="inline-block w-3 h-3 rounded-full bg-pink-400 mr-2"></span> Beginner (≤ 0.3)</div>
+          <div><span className="inline-block w-3 h-3 rounded-full bg-blue-400 mr-2"></span> Beginner (≤ 0.3)</div>
           <div><span className="inline-block w-3 h-3 rounded-full bg-purple-400 mr-2"></span> Intermediate (≤ 0.5)</div>
-          <div><span className="inline-block w-3 h-3 rounded-full bg-blue-400 mr-2"></span> Proficient (≤ 0.7)</div>
+          <div><span className="inline-block w-3 h-3 rounded-full bg-pink-400 mr-2"></span> Proficient (≤ 0.7)</div>
           <div><span className="inline-block w-3 h-3 rounded-full bg-green-400 mr-2"></span> Expert (≤ 1.0)</div>
         </div>
       </div>
