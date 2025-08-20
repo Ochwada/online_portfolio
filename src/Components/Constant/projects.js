@@ -4,13 +4,25 @@
 
 export const projectsNavigation = [
     {
+        id: " AuthenticationTripWise",
+        name: "Authentication TripWise Application",
+        description:"This is an Authentication microservice within the TripWise system, purpose-built for handling user authentication via OAuth2 with Google as the social login provider.",
+        git_href: "https://github.com/Ochwada/TripWise-Pass",
+        //web_href: " ",
+        href: "https://github.com/Ochwada/TripWise-Pass/blob/main/README.md",
+        image: '/assets/projects/code1.jpg',
+        category: ["Backend & Data Eng."],
+        subcategory: "Advanced Java",
+        tools: ["#JWTAuthentication", "#SpringBoot", "#RESTfulAPI", "#Microservices", "#Docker"],
+    },
+    {
         id: " AuthenticationZalandoLiteV2",
         name: "Authentication ZalandoLite V2",
         description:"The Authentication Service, is a lightweight, modular microservice in the ZalandoLite ecosystem, purpose-built for handling user authentication via OAuth2 with Google as the social login provider.",
         git_href: "https://github.com/Ochwada/ZalandoLiteV2-authentication",
         //web_href: " ",
         href: "https://github.com/Ochwada/ZalandoLiteV2-authentication/blob/main/README.md",
-        image: '/assets/projects/code1.jpg',
+        image: '/assets/projects/zalandoLite.jpg',
         category: ["Backend & Data Eng."],
         subcategory: "Advanced Java",
         tools: ["#JWTAuthentication", "#SpringBoot", "#RESTfulAPI", "#Microservices", "#Docker"],
