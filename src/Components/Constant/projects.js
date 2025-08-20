@@ -4,6 +4,18 @@
 
 export const projectsNavigation = [
     {
+        id: " TripWise",
+        name: "TripWise Application",
+        description:"JetCity Journal is a compact roadmap project that merges the best of JetSetGo (trip planning, packing, currency, phrases, weather) and CityTrip Companion (city search, weather, and journaling with photos).",
+        git_href: "https://github.com/Ochwada/TripWise-Architecture",
+        //web_href: " ",
+        href: "https://github.com/Ochwada/TripWise-Architecture/blob/main/README.md",
+        image: '/assets/projects/code2.jpg',
+        category: ["Backend & Data Eng."],
+        subcategory: "Advanced Java",
+        tools: ["#JWTAuthentication", "#SpringBoot", "#RESTfulAPI", "#Microservices", "#Docker"],
+    },
+    {
         id: " AuthenticationTripWise",
         name: "Authentication TripWise Application",
         description:"This is an Authentication microservice within the TripWise system, purpose-built for handling user authentication via OAuth2 with Google as the social login provider.",
