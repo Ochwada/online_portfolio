@@ -13,7 +13,7 @@ export const projectsNavigation = [
         image: '/assets/projects/code2.jpg',
         category: ["Backend & Data Eng."],
         subcategory: "Advanced Java",
-        tools: ["#JWTAuthentication", "#SpringBoot", "#RESTfulAPI", "#Microservices", "#Docker"],
+        tools: ["#JWTAuthentication", "#AWS-EC2", "#RESTfulAPI", "#Microservices", "#CI/CD"],
     },
     {
         id: " AuthenticationTripWise",

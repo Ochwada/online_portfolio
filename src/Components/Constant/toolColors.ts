@@ -35,6 +35,8 @@ export const toolColors: Record<string, { bg: string; text: string }> = {
     "#Docker": { bg: "bg-orange-100", text: "text-orange-800" },
     "#JWTAuthentication": { bg: "bg-amber-100", text: "text-amber-800" },
     "#Microservices": { bg: "bg-teal-100", text: "text-teal-800" },
+    "#AWS-EC2": { bg: "bg-cyan-100", text: "text-cyan-800" },
+    "#CI/CD": { bg: "bg-emerald-100", text: "text-emerald-800" },
     // ------------------- ---------------- --------------------------//
     // ---------------- Events Color Change --------------------------//
 
