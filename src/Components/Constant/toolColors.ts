@@ -8,7 +8,7 @@ export const toolColors: Record<string, { bg: string; text: string }> = {
     "#TailwindCSS": { bg: "bg-orange-100", text: "text-orange-800" },
     "#NextJS": { bg: "bg-amber-100", text: "text-amber-800" },
     "#ThreeJS": { bg: "bg-yellow-100", text: "text-yellow-800" },
-    "#NodeJS": { bg: "bg-yellow-100", text: "text-yellow-800" },
+    "#NodeJS": { bg: "bg-fuchsia-100", text: "text-fuchsia-800" },
     "#Vite": { bg: "bg-lime-100", text: "text-lime-800" },
     "#scss": { bg: "bg-green-100", text: "text-green-800" },
     // -- Hosting
@@ -34,6 +34,7 @@ export const toolColors: Record<string, { bg: string; text: string }> = {
     "#FreeCurrencyAPI": { bg: "bg-red-100", text: "text-red-800" },
     "#Docker": { bg: "bg-orange-100", text: "text-orange-800" },
     "#JWTAuthentication": { bg: "bg-amber-100", text: "text-amber-800" },
+    "#Microservices": { bg: "bg-teal-100", text: "text-teal-800" },
     // ------------------- ---------------- --------------------------//
     // ---------------- Events Color Change --------------------------//
 
