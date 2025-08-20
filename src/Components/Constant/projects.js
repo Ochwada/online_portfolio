@@ -22,7 +22,7 @@ export const projectsNavigation = [
         git_href: "https://github.com/Ochwada/ZalandoLiteV2-authentication",
         //web_href: " ",
         href: "https://github.com/Ochwada/ZalandoLiteV2-authentication/blob/main/README.md",
-        image: '/assets/projects/zalandoLite.jpg',
+        image: '/assets/projects/zalandoLite.png',
         category: ["Backend & Data Eng."],
         subcategory: "Advanced Java",
         tools: ["#JWTAuthentication", "#SpringBoot", "#RESTfulAPI", "#Microservices", "#Docker"],
