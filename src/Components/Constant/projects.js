@@ -4,6 +4,18 @@
 
 export const projectsNavigation = [
     {
+        id: " AuthenticationZalandoLiteV2",
+        name: "Authentication ZalandoLite V2",
+        description:"The Authentication Service, is a lightweight, modular microservice in the ZalandoLite ecosystem, purpose-built for handling user authentication via OAuth2 with Google as the social login provider.",
+        git_href: "https://github.com/Ochwada/ZalandoLiteV2-authentication",
+        //web_href: " ",
+        href: "https://github.com/Ochwada/ZalandoLiteV2-authentication/blob/main/README.md",
+        image: '/assets/projects/code1.jpg',
+        category: ["Backend & Data Eng."],
+        subcategory: "Advanced Java",
+        tools: ["#JWTAuthentication", "#SpringBoot", "#RESTfulAPI", "#Microservices", "#Docker"],
+    },
+    {
         id: " ZalandoLiteV2",
         name: " ZalandoLite V2",
         description:"ZalandoLiteV2 is a microservices-based backend system simulating a fashion e-commerce platform. It includes seven (7) services, secured with Google OAuth2, containerized with Docker, and connected via the zalando-backend network. No UI—API only.",
@@ -15,7 +27,6 @@ export const projectsNavigation = [
         subcategory: "Advanced Java",
         tools: ["#JWTAuthentication", "#Database", "#SpringBoot", "#RESTfulAPI", "#Microservices"],
     },
-
     {
         id: "SecureJokeVault",
         name: "Secure Joke Vault",
