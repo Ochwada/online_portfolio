@@ -3,6 +3,18 @@
 // -------------------------------------------Projects Navigation --------------------
 
 export const projectsNavigation = [
+    {
+        id: " ZalandoLiteV2",
+        name: " ZalandoLite V2",
+        description:"ZalandoLiteV2 is a microservices-based backend system simulating a fashion e-commerce platform. It includes seven (7) services, secured with Google OAuth2, containerized with Docker, and connected via the zalando-backend network. No UI—API only.",
+        git_href: "https://github.com/Ochwada/ZalandoLiteV2-MicroservicesArchitecture",
+        //web_href: " ",
+        href: "https://github.com/Ochwada/ZalandoLiteV2-MicroservicesArchitecture/blob/main/README.md",
+        image: '/assets/projects/code.jpg',
+        category: ["Backend & Data Eng."],
+        subcategory: "Advanced Java",
+        tools: ["#JWTAuthentication", "#Database", "#SpringBoot", "#RESTfulAPI", "#Microservices"],
+    },
 
     {
         id: "SecureJokeVault",
